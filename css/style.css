@@ -1,0 +1,779 @@
+body{
+  /* フォントを追加（マメロン） */
+  font-family: mamelon, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  padding: 0px;
+  margin: 0;
+  color: #6c6059;
+  background-color: #FFFCEF;
+}
+
+/* アイコンとPC用ナビゲーションとハンバーガーナビゲーションを横並びにさせる (両端に配置)*/
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #6c6059; */
+} 
+
+#salonIcon{
+  width: 5rem;
+  height: auto;
+}
+
+#navPc{
+  width: 40rem;
+  height: auto;
+  padding: 0rem 1rem 1rem 1rem;
+  margin-right: 4rem;
+  /* background-color: tomato; */
+}
+
+.nav_pc_ul{
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  /* pc用ナビの中身を横一列に配置 */
+  display: flex;
+  justify-content: space-around; 
+  position: relative;
+  /* background-color: lightgreen; */
+}
+
+.nav_pc_list img{
+  width: 100%;
+  height: auto;
+}
+
+.nav_sns_icon{
+  margin-left: 1rem;
+}
+
+#dropDown{
+  width: 8rem;
+  height: auto;
+  font-size: small;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 8rem;
+  padding-top: 1rem;
+  background-color: #FFFfff;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  /* ドロップダウンは通常時は隠しておく */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease; 
+  z-index: 100;
+}
+
+#dropDown a{
+  color: #6c6059;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dropDown a:hover{
+  color: hsl(29, 37%, 74%);
+}
+
+#menu:hover #dropDown{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*-----------------------ハンバーガーナビゲーションstart--------------------*/
+
+#navArea{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0%;
+  margin: 0%;
+}
+
+#navHum{
+  width: 80%;
+  height: auto;
+  display: block;
+  background-color: #FFFfff;
+  border-radius: 15px;
+  position: fixed;
+  top: 0%;
+  right: caic(-100%); /*クリックすル前は画面右側に隠されている*/
+  transition: all 0.5s;
+  z-index: 100;
+  opacity: 0;
+}
+
+.open #navHum {
+  right: 0;
+  opacity: 1; /*表示される時と非表示になる時、画面からフェードアウトする時とフェードインする時にグラデーションをつける*/
+}
+
+#hum_item_wrap{
+  width: 80%;
+  height: auto;
+  padding: 0%;
+  margin: 5rem auto 0 auto;
+  list-style: none;
+}
+
+#hum_item_wrap li{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+#navHum a{
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #6c6059;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0;
+  /* transition-duration: 0.2s; */
+  cursor: pointer;
+}
+
+.hum_icon_wrap{
+  width: 50%;
+  height: auto;
+  margin: 1rem auto 3rem auto;
+  display: flex;
+}
+
+.hum_icon_wrap:hover{
+  background-color: #FFFfff;
+}
+
+.hum_insta,
+.hum_facebook{
+  width: 100%;
+  height: auto;
+}
+
+.hum_insta img,
+.hum_facebook img{
+  width: 24%;
+}
+
+#navHum li:hover{
+  background-color: #D6BDA5;
+  border-radius: 15px;
+}
+
+.toggle-btn{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 4.5%;
+  right: 1rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.toggle-btn span{
+  width: 1.4rem;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #6c6059;
+}
+
+.toggle-btn span:nth-child(1){
+  top: 4px;
+  transition-duration: 1s;
+}
+
+.toggle-btn span:nth-child(2){
+  top: 14px;
+  transition-duration: 0.9s;
+}
+
+.toggle-btn span:nth-child(3){
+  top: 24px;
+  transition-duration: 0.5s;
+}
+
+.open .toggle-btn span:nth-child(1){
+  transform: translateY(10px) rotate(-315deg);
+  transition-duration: 1s;
+}
+
+.open .toggle-btn span:nth-child(2){
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.open .toggle-btn span:nth-child(3){
+  transform: translateY(-10px) rotate(+315deg);
+  transition-duration: 1s;
+}
+/* -----------------ハンバーガーナビゲーションend--------------- */
+
+/* -----------------main start------------------------------ */
+.mainTitle{
+  /* フォントを’ab-kirigirisu’に指定する */
+  font-family: ab-kirigirisu, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  /* 文字間隔を狭める */
+  letter-spacing: -8px;
+  /* background-color: aqua; */
+}
+
+#subTitle{
+  width: 30%;
+  height: 15%;
+  padding-top: 2rem;
+  background-color: rgb(253, 246, 236, 0.7);
+  border-radius: 15px;
+  position: absolute;
+  top: 12rem;
+  right: 3%;
+}
+
+#subTitle h2{
+  width: 100%;
+  height: auto;
+  /* フォントを’ab-kirigirisu’に指定する */
+  font-family: ab-kirigirisu, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.large_text{
+  font-size: 1.6rem;
+}
+
+.image_gallery{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image_slide_pc{
+  width: 33.33%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.image_slide_pc img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 3.5s ease-out forwards;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#mainVisualSp{
+  display: none;
+}
+
+/* content_ttlは各タイトルを装飾するためのクラス名 */
+.content_ttl{
+  width:max-content;
+  margin: auto;
+  /* フォントを’ab-kirigirisu’に指定する*/
+  font-family: ab-kirigirisu, sans-serif;
+  /* 文字間隔を狭める */
+  letter-spacing: -5px;
+  font-style: normal;
+  color: #D6BDA5;
+}
+
+article{
+  padding: 10% 0;
+}
+
+/* -----------------concept----------------------- */
+#conceptWrap{
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: calc(-50vw + 50%);
+  padding: 50px 0 10px 0;
+  /* background-color: skyblue; */
+}
+
+#conceptDescription{
+  display: flex;
+  position: relative;
+  margin-top: 5%;
+}
+
+#salonTxtWrap{
+  width: 50%;
+  height: auto;
+  margin-top: 8%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+#salonTxt{
+  color: #9e7f63;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+#threeImg{
+  width: 20%;
+  height: auto;
+}
+
+#threeImg img{
+  width: 100%;
+}
+
+#conceptImg{
+  width: 50%;
+  height: auto;
+}
+
+#conceptImg img{
+  width: 100%;
+    /* マスクを設定*/
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+
+    /* マスクのその他の設定 */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.image_container{
+  position: relative;
+}
+
+#image{
+  /* 不透明度をスムーズに変化させる */
+  transition: opacity 0.5s ease;
+}
+
+.invisible{
+  /* 不透明度を０にする */
+  opacity: 0;
+}
+
+#conceptContent2{
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assetts/img/flower.png");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: calc(100%) calc(110%);
+  /* background-color: chocolate; */
+}
+
+#conceptContent2,
+#conceptContent3{
+  width: 100%;
+  height: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#salonTxtWrap3{
+  width: 100%;
+  height: auto;
+}
+
+#salonTxt3{
+  font-size: 0.7rem;
+}
+/* --------------therapist-------------------------- */
+
+#therapistWrap{
+  width: 100vw;
+  box-sizing: border-box;
+  margin-top: 10%;
+  margin-left: calc(-50vw + 50%);
+  /* background-color: slateblue; */
+}
+
+#therapistImg1{
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+#therapistImg1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ---セラピスト画像の縁をぼかす---- */
+#therapistImg1 img,
+#therapistImg2 img,
+#therapistImg3 img{
+  /* マスクを設定 */
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+
+    /* マスクのその他の設定 */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+#salonTxtWrap2{
+  width: 100%;
+  height: auto;
+  font-size: 0.9rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  line-height: 2;
+  /* background-color: hotpink; */
+}
+
+#salonTxtWrap2 p{
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+  /* background-color: limegreen; */
+}
+
+#therapistContent2{
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assetts/img/bird-2.png");
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  background-position: calc(5%) calc(100%);
+  position: relative;
+}
+
+#therapistTxt2{
+  width: 50%;
+  height: auto;
+  padding-top: 8%;
+  font-size: 0.9rem;
+  line-height: 2;
+  text-align: center;
+}
+
+#therapistImg2{
+  width: 50%;
+  height: auto;
+  /* position: absolute;
+  top: 24%;
+  right: 20%; */
+  /* background: darkred; */
+}
+#therapistImg2 img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  /* background-color: deepskyblue; */
+}
+
+#therapistContent3{
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+  display: flex;
+  background-image: url("../assetts/img/bird-3.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: calc(100%) calc(100%);
+}
+
+#therapistImg3{
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+#therapistImg3 img{
+  width: 60%;
+  height: auto;
+  border-radius: 15px;
+}
+
+#therapistTxt3{
+  width: 50%;
+  height: auto;
+}
+
+#therapistTxt3 p{
+  width: 90%;
+  height: auto;
+  font-size: 0.9rem;
+}
+
+/* --------------sns--------------------------------- */
+
+#snsWrap{
+  margin-top: 10%;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+
+
+
+#snsWrap p{
+  text-align: center;
+  padding: 30px 0 50px 0;
+  /* background-color: white; */
+}
+
+#snsContent{
+  padding: 0%;
+  margin: 0%;
+  /* background-color: salmon; */
+}
+
+#snsContent ul{
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: cornflowerblue; */
+}
+
+#snsContent a{
+  color: #6c6059;
+  text-decoration: none;
+}
+
+/* リンクにカーソルがある時 */
+#snsContent a:hover{
+  color: #D6BDA5;
+}
+
+#instagram{
+  width: 30%;
+  padding: 0%;
+  margin: 0%;
+  /* インスタの画像を中央に寄せる */
+  text-align: center; 
+}
+
+#instagram h3{
+  font-size: 100%;
+  /* background-color: wheat; */
+}
+
+/* -----カーソルが乗った時にじんわりと色が変わる------ */
+#instagram h3:hover{
+color: rgba(130,190,200,1);
+transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+#instagram img{
+  width: 13%;
+  height: auto;
+}
+
+#facebook{
+  width: 30%;
+  /* facebookの画像を中央に寄せる */
+  text-align: center;
+}
+
+#facebook h3{
+  font-size: 100%;
+  /* background-color: whitesmoke; */
+}
+
+#facebook h3:hover{
+  color: rgba(230,190,130,1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+  }
+
+#facebook img{
+  width: 13%;
+  height: auto;
+}
+
+#ameblo{
+  width: 30%;
+  text-align: center;
+}
+
+#ameblo h3{
+  font-size: 100%;
+  /* background-color: lightskyblue; */
+}
+
+/* -----カーソルが乗った時にじんわりと色が変わる------ */
+#ameblo h3:hover{
+  color: rgba(170,150,220,1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+  }
+
+#ameblo img{
+  width: 13%;
+  height: auto;
+}
+
+/*---------------------- access ----------------------------*/
+
+#accessWrap{
+  margin-top: 10%;
+}
+
+#map{
+  width: 80%;
+  height: auto;
+  margin: 10% auto 10% auto;
+}
+
+#map img{
+  width: 100%;
+  height: auto;
+}
+
+#accessContent section{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.itemTtl{
+  font-size: 0.8rem;
+  padding-top: 20px;
+  color: #D6BDA5;
+}
+
+/* -----------------------footer---------------------- */
+
+#footerSalonIcon{
+  width: 4rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: yellow; */
+}
+
+#footerSalonIcon img{
+  width: 100%;
+  height: auto;
+  /* background-color: plum; */
+}
+
+#footerNav{
+  width: 46rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: mediumvioletred; */
+}
+
+.footer_ul{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 50px auto auto auto;
+  /* background-color: aquamarine; */
+}
+
+.footer_li{
+  margin-right: 25px;
+  margin-left: 25px;
+  text-align: center;
+  /* background-color: yellow; */
+}
+
+.footer_ul img{
+  width: 100%;
+  height: auto;
+  /* background-color: tomato; */
+}
+
+.footer_sns_icon{
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 50px auto auto auto;
+  /* background-color: darkblue; */
+}
+
+.footer_sns_icon li{
+  width: 2rem;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  /* background-color: indianred; */
+}
+
+.footer_sns_icon img{
+  width: 100%;
+  height: auto;
+  /* background-color: skyblue; */
+}
+
+#copy{
+  text-align: center;
+  /* background-color: mediumorchid; */
+}
+
+
+table{ 
+  border: 1px solid black;
+}
+
+#menu_head_table{
+  width: 40%;
+  background-color: #FFFCEF;
+  margin: 50px;
+}
+
+#menu_facial_table{
+  width: 40%;
+  background-color: #FFFCEF;
+  margin: 50px;
+}
+
+.news_content section{
+  padding : 50px;
+  margin: 50px;
+  background-color: #cba890;
+}
+
+.footer_content{
+  display: flex;
+  /* 写真と文章を均等に真ん中に配置する */
+  justify-content: center;
+  padding: 0px;
+}

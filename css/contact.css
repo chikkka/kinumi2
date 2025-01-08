@@ -1,0 +1,73 @@
+#contact{
+  width: 20rem;
+  /* フォントを’ab-kirigirisu’に指定する */
+  font-family: ab-kirigirisu, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #D6BDA5;
+  text-align: center;
+  margin: 3rem auto 3rem auto;
+}
+
+#contactWrap{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_name,
+.contact_phone,
+.contact_email,
+.contact_date,
+.contact_time,
+#requestMenu,
+#otherContacts{
+  font-size: 0.9rem;
+}
+
+#name,
+#phone,
+#email,
+#message{
+  width: 75%;
+  background-color: #ece3d9;
+  border-radius: 10px;
+}
+
+#requestMenu{
+  margin-top: 2rem;
+}
+
+#date{
+  font-size: 0.8rem;
+}
+
+legend{
+  color: #D6BDA5;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+}
+
+.choices{
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.choices_input{
+  margin-right: 3%;
+}
+
+#otherContacts{
+  margin-top: 4rem;
+}
+
+#button{
+  display: block;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 4rem auto 10rem auto;
+  background-color: #D6BDA5;
+  
+}

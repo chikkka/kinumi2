@@ -115,6 +115,17 @@ header{
   opacity: 1; /*表示される時と非表示になる時、画面からフェードアウトする時とフェードインする時にグラデーションをつける*/
 }
 
+#navHum a{
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #6c6059;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0;
+  /* transition-duration: 0.2s; */
+  cursor: pointer;
+}
+
 #hum_item_wrap{
   width: 80%;
   height: auto;
@@ -132,40 +143,28 @@ header{
   margin: 0 auto 1rem auto;
 }
 
-#navHum a{
-  width: 100%;
-  display: block;
-  text-decoration: none;
-  color: #6c6059;
-  font-size: 1rem;
-  padding: 1rem 0 1rem 0;
-  /* transition-duration: 0.2s; */
-  cursor: pointer;
-}
-
-.hum_icon_wrap{
-  width: 50%;
+#hum_icon_wrap{
+  width: 80%;
   height: auto;
   margin: 1rem auto 3rem auto;
   display: flex;
 }
 
-.hum_icon_wrap:hover{
-  background-color: #FFFfff;
-}
-
 .hum_insta,
 .hum_facebook{
-  width: 100%;
+  width: 8%;
   height: auto;
+  margin: 0 auto 0 auto;
+  text-align: center;
 }
 
 .hum_insta img,
 .hum_facebook img{
-  width: 24%;
+  width: 100%;
+  height: auto;
 }
 
-#navHum li:hover{
+#hum_item_wrap li:hover{
   background-color: #D6BDA5;
   border-radius: 15px;
 }

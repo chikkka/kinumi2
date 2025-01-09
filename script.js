@@ -7,18 +7,16 @@ btn.onclick = () => {
 };
 
 // 下にスクロールするとtopに戻るボタンが出現する
-const returnTopButton = document.getElementById("returnTop");
-const title = document.getElementById("subTitle");
-const setPoint = title.offsetTop;
-window.addEventListener("scroll",()=>{
-  if(window.scrollY >= setPoint){
-    returnTopButton.classList.add("fixed");
-  }else{
-    returnTopButton.classList.remove("fixed");
-  }
-});
-
-
+// const returnTopButton = document.getElementById("returnTop");
+// const title = document.getElementById("subTitle");
+// const setPoint = title.offsetTop;
+// window.addEventListener("scroll",()=>{
+//   if(window.scrollY >= setPoint){
+//     returnTopButton.classList.add("fixed");
+//   }else{
+//     returnTopButton.classList.remove("fixed");
+//   }
+// });
 
 // -------menuページ---------
 // メニューバーの固定
@@ -33,7 +31,7 @@ window.addEventListener("scroll",()=>{
 });
 
 
-
+console.log(stickyPoint,stickyPoint);
 
 
 

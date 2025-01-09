@@ -1,14 +1,8 @@
-body{
-  width: 100%;
+#menuArticle{
+  position: relative;
 }
-
-article{
-  width: 90%;
-  height: auto;
-}
-
 #effectItem{
-  width: 100%;
+  width: 90%;
   height: 2.5rem;
   background-color: rgb(240, 233, 187);
   border-radius: 10px;

@@ -185,11 +185,7 @@
   margin: 0 auto -10% auto;
   display: flex;
   justify-content: space-around;
-}
-
-.circle{
-  width: 6rem;
-  height: auto;
+  background-color: pink;
 }
 
 .menu_ttl{
@@ -200,6 +196,21 @@
   font-size: 1.2rem;
   text-align: center;
   /* background-color: blue; */
+}
+
+.circle{
+  width: 6rem;
+  height: auto;
+}
+
+.add_info{
+  width: 90%;
+  height: auto;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4bb7bb;
 }
 
 .facial_menu{
@@ -288,17 +299,6 @@
 
 .text_block_sp{
   display: none;
-}
-
-.add_info{
-  width: 90%;
-  height: auto;
-  font-size: 0.9rem;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #coupon{

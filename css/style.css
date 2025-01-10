@@ -1,44 +1,49 @@
 body{
+  position: relative;
   width: 100%;
   height: auto;
+  padding: 0px;
+  margin: 0;
+  background-color: #FFFCEF;
   /* フォントを追加（マメロン） */
   font-family: mamelon, sans-serif;
   font-style: normal;
   font-weight: 200;
-  padding: 0px;
-  margin: 0;
   color: #6c6059;
-  position: relative;
-  background-color: #FFFCEF;
 }
 
 /* アイコンとPC用ナビゲーションとハンバーガーナビゲーションを横並びにさせる (両端に配置)*/
 header{
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: auto;
 } 
 
 #salonIcon{
-  width: 5rem;
+  width: 10%;
+  height: auto;
+}
+
+#salonIcon img{
+  width: 100%;
   height: auto;
 }
 
 #navPc{
-  width: 40rem;
+  width: 60%;
   height: auto;
-  padding: 0rem 1rem 1rem 1rem;
-  margin-right: 4rem;
+  margin-right: 5%;
 }
 
 .nav_pc_ul{
-  width: 100%;
-  height: auto;
-  padding-top: 1rem;
+  position: relative;
   /* pc用ナビの中身を横一列に配置 */
   display: flex;
   justify-content: space-around; 
-  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
 }
 
 .nav_pc_list img{
@@ -46,35 +51,35 @@ header{
   height: auto;
 }
 
-.nav_sns_icon{
-  margin-left: 1rem;
-}
-
 #dropDown{
-  width: 40%;
-  height: auto;
-  font-size: small;
-  padding: 5px;
-  margin: 0;
   position: absolute;
   top: 100%;
-  left: 8rem;
-  padding-top: 1rem;
+  left: 10%;
+  z-index: 100;
+  width: 60%;
+  height: auto;
+  padding-top: 4%;
+  margin: 0;
   background-color: #FFFfff;
   border-radius: 5%;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   /* ドロップダウンは通常時は隠しておく */
   visibility: hidden;
+  font-size: 0.9rem;
   opacity: 0;
   transition: opacity 0.6s ease; 
-  z-index: 100;
+}
+
+#dropDown p{
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #dropDown a{
   color: #6c6059;
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #dropDown a:hover{
@@ -86,36 +91,38 @@ header{
   opacity: 1;
 }
 
+.nav_sns_icon{
+  margin-left: 4%;
+}
+
 /*-----------------------ハンバーガーナビゲーションstart--------------------*/
 
 #navArea{
+  position: relative;
   width: 100%;
   height: auto;
-  position: relative;
-  padding: 0%;
-  margin: 0%;
   display: none;
 }
 
-
-#navArea.fixed{
-  display: block;
-
-  background-color: lightsalmon;
-}
-
 #navHum{
+  display: block;
+  position: fixed;
+  top: 2%;
+  right: -300rem;
   width: 80%;
   height: auto;
-  display: block;
   background-color: #FFFfff;
   border-radius: 15px;
-  position: fixed;
-  top: 0%;
-  right: -400px; /*クリックすル前は画面右側に隠されている*/
   transition: all 0.5s;
   z-index: 100;
   opacity: 0;
+}
+
+#navHum ul{
+  width: 90%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .open #navHum {
@@ -124,12 +131,12 @@ header{
 }
 
 #navHum a{
-  width: 100%;
   display: block;
-  text-decoration: none;
-  color: #6c6059;
+  width: 100%;
+  padding: 4% 0 4% 0;
   font-size: 1rem;
-  padding: 1rem 0 1rem 0;
+  color: #6c6059;
+  text-decoration: none;
   /* transition-duration: 0.2s; */
   cursor: pointer;
 }
@@ -137,25 +144,23 @@ header{
 #hum_item_wrap{
   width: 80%;
   height: auto;
-  padding: 0%;
-  margin: 5rem auto 0 auto;
-  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  /* list-style: none; */
 }
 
 #hum_item_wrap li{
   width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   margin: 0 auto 1rem auto;
+  text-align: center;
 }
 
 #hum_icon_wrap{
-  width: 80%;
-  height: auto;
-  margin: 1rem auto 3rem auto;
   display: flex;
+  width: 70%;
+  height: auto;
+  margin: 1% auto 1% auto;
 }
 
 .hum_insta,

@@ -50,12 +50,15 @@
     </script>
   </head>
 
+  <!-----------------------------body---------------------------->
   <body>
     <header>
-      <a href="index.html">
-        <img id="salonIcon" src="./assetts/img/yamasulogo_480px.png">
-      </a>
-      <!-- PC用ナビゲーション -->
+      <div id="salonIcon">
+        <a href="index.html">
+          <img src="./assetts/img/yamasulogo_480px.png">
+        </a>
+      </div>
+<!---------------------- PC用ナビゲーション ---------------------->
       <nav id="navPc">
         <ul class="nav_pc_ul">
           <li class="nav_pc_list">
@@ -68,13 +71,21 @@
               <img src="./assetts/img/menu.png" alt="menu">
             </a>
             <div id="dropDown"> 
-              <div>
-                  <a href="./menu.html#facial">-&nbsp&nbspfacial<br><br></a>
-                  <a href="./menu.html#body ">-&nbsp&nbspbody<br><br></a>
-                  <a href="./menu.html#head">-&nbsp&nbsphead<br><br></a>
-                  <a href="./menu.html#onlineFacial">-&nbsp&nbsponline&nbspfacial<br><br></a>
-                  <a href="./menu.html#bridal">-&nbsp&nbspbridal<br><br></a>
-              </div>
+              <p>
+                <a href="./menu.html#facial">-&nbsp&nbspfacial</a>    
+              </p>
+              <p>
+                <a href="./menu.html#body ">-&nbsp&nbspbody</a>
+              </p>
+              <p>
+                <a href="./menu.html#head">-&nbsp&nbsphead</a>
+              </p>
+              <p>
+                <a href="./menu.html#onlineFacial">-&nbsp&nbsponline&nbspfacial</a>
+              </p>
+              <p>
+                <a href="./menu.html#bridal">-&nbsp&nbspbridal</a>
+              </p>
             </div>
           </li>
           <li class="nav_pc_list">
@@ -92,168 +103,200 @@
               <img src="./assetts/img/access.png" alt="access">
             </a>
           </li>
+          <li class="nav_pc_list">
+            <a href="index.html#goods">
+              <img src="./assetts/img/shop.png" alt="商品ページ">
+            </a>
+          </li>
+          <li class="nav_pc_list">
+            <a href="index.html#school">
+              <img src="./assetts/img/school.png" alt="スクール">
+            </a>
+          </li>
           <li class="nav_pc_list nav_sns_icon">
-            <a href="">
+            <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr">
               <img src="./assetts/img/icon_facebook.png" alt="facebook">
             </a>
           </li>
           <li class="nav_pc_list nav_sns_icon">
-            <a href="">
+            <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6">
               <img src="./assetts/img/icon_insta.png" alt="intagram">
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- ハンバーガーナビゲーション -->
+
+    <!---------------------- ハンバーガーナビゲーション ---------------->
     <div id="navArea">
       <nav id="navHum">
         <ul>
-          <div id="hum_item_wrap">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="#access">Access</a></li>
-          </div>
-          <div id="hum_icon_wrap">
-            <li class="hum_insta"><a href=""><img src="./assetts/img/icon_insta.png"></a></li>
-            <li class="hum_facebook"><a href=""><img src="./assetts/img/icon_facebook.png"></a></li>
-          </div>
+          <li class="hum_item_wrap">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="index.html/#access">Access</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="index.html#goods">Shop</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="index.html#school">School</a>
+          </li>
+          <li class="hum_item_wrap">
+            <div id="hum_icon_wrap">
+              <div class="hum_insta">
+                <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6"><img src="./assetts/img/icon_insta.png"></a>
+              </div>
+            </div>
+            <div id="hum_icon_wrap">
+              <div class="hum_facebook">
+                <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr"><img src="./assetts/img/icon_facebook.png"></a>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="toggle-btn">
-        <span></span>
-        <span></span>
+        <span ></span>
+        <span ></span>
         <span></span>
       </div>
     </div>
-    <main>
       <!----------------- main ------------------->
+    <main>
       <h1 class="mainTitle">ママのためのサロン&nbsp;&nbspやます</h1>
       <h3 id="contact">ご予約・お問い合わせ</h3>
       <form action="send_email.php" method="POST" id="contactWrap">
         <!-- お名前 -->
-        <label class="contact_name">お名前(必須)</label>
-        <input type="text" id="name" name="user_name" required>
+        <label for="name" class="contact_name">お名前(必須)</label>
+        <input type="text" id="name" name="name" required>
         <br>
 
         <!-- 電話番号 -->
-        <label class="contact_phone">電話番号(必須)</label>
-        <input type="tel" id="phone" name="user_phone" required>
+        <label for="phone" class="contact_phone">電話番号(必須)</label>
+        <input type="tel" id="phone" name="phone" required>
         <br>
 
         <!-- メールアドレス -->
-        <label class="contact_email">メールアドレス</label>
-        <input type="email" id="email" name="user_email">
+        <label for="email" class="contact_email">メールアドレス</label>
+        <input type="email" id="email" name="email">
         <br>
 
         <!-- 予約希望日 -->
-        <label class="contact_date">ご予約希望日(必須)</label>
+        <label for="date" class="contact_date">ご予約希望日(必須)</label>
         <input type="date" id="date" name="date" required>
         <br>
 
         <!-- 予約希望時間 -->
-        <label class="contact_time">ご希望のお時間(必須)</label>
+        <label for="time" class="contact_time">ご希望のお時間(必須)</label>
         <input type="time" id="time" name="time" required>
         <br>
 
         <!-- 希望メニュー -->
-        <label id="requestMenu">ご希望の施術メニュー( 複数選択可 )</label>
         <fieldset>
-          <legend>facial</legend>
-          <label class="choices" >
-            <input type="checkbox" id="menuSonic" class="choices_input" name="sonic">超音波ソニック
-          </label> 
-          <label class="choices" >
-            <input type="checkbox" id="menuIon" class="choices_input" name="ion">イオンスチームフェイシャルマッサージ
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuSonicIon" class="choices_input" name="sonic-ion">超音波ソニック＋スチームフェイシャルマッサージ
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuPoration" class="choices_input" name="poration">ポレーション（選べるトリートメントパック付き）
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuSphere" class="choices_input" name="sphere">3Dスフィア
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuCray" class="choices_input" name="cray">クレイマスク
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuMonitor" class="choices_input" name="monitor">スキンケアモニター
-          </label>
-        </fieldset>
+          <legend>ご希望の施術メニュー( 複数選択可 )</legend>
+          <fieldset>
+            <legend>facial</legend>
+            <label class="choices" >
+              <input type="checkbox" id="menuSonic" class="choices_input" name="menu[]" value="sonic">超音波ソニック
+            </label> 
+            <label class="choices" >
+              <input type="checkbox" id="menuIon" class="choices_input" name="menu[]" value="ion">イオンスチームフェイシャルマッサージ
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuSonicIon" class="choices_input" name="menu[]" value="sonic-ion">超音波ソニック＋スチームフェイシャルマッサージ
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuPoration" class="choices_input" name="menu[]" value="poration">ポレーション（選べるトリートメントパック付き）
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuSphere" class="choices_input" name="menu[]" value="sphere">3Dスフィア
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuCray" class="choices_input" name="menu[]" value="cray">クレイマスク
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuMonitor" class="choices_input" name="menu[]" value="monitor">スキンケアモニター
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>body</legend>
-          <label class="choices">
-            <input type="checkbox" id="menuAll70" class="choices_input" name="all70">全身(70min)
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuUpperBody" class="choices_input" name="upperbody">上半身(40min)
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuLowerBody" class="choices_input" name="lowerbody">下半身(30min)
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>body</legend>
+            <label class="choices">
+              <input type="checkbox" id="menuAll70" class="choices_input" name="menu[]" value="all70">全身(70min)
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuUpperBody" class="choices_input" name="menu[]" value="upperbody">上半身(40min)
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuLowerBody" class="choices_input" name="menu[]" value="lowerbody">下半身(30min)
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>head</legend>
-          <label class="choices" >
-            <input type="checkbox" id="menuHead60" class="choices_input" name="head60">60min
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuHead25" class="choices_input" name="head25">25min
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuHeadFacialOption" class="choices_input" name="facialoption">facial option
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>head</legend>
+            <label class="choices" >
+              <input type="checkbox" id="menuHead60" class="choices_input" name="menu[]" value="head60">60min
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuHead25" class="choices_input" name="menu[]" value="head25">25min
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuHeadFacialOption" class="choices_input" name="menu[]" value="facialoption">facial option
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>online facial</legend>
-          <label class="choices" >
-            <input type="checkbox" id="menuOnlineSphere" class="choices_input" name="online-sphere">3Dスフィア
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuOnlineMassage" class="choices_input" name="online-massage">マッサージ
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuOnlineSphereMassage" class="choices_input" name="online-sphere-massage">3Dスフィア+マッサージ
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>online facial</legend>
+            <label class="choices" >
+              <input type="checkbox" id="menuOnlineSphere" class="choices_input" name="menu[]" value="online-sphere">3Dスフィア
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuOnlineMassage" class="choices_input" name="menu[]" value="online-massage">マッサージ
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuOnlineSphereMassage" class="choices_input" name="menu[]" value="online-sphere-massage">3Dスフィア+マッサージ
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>bridal</legend>
-          <label class="choices" >
-            <input type="checkbox" id="menuBridal" class="choices_input" name="bridal">ブライダル(カウンセリング込み)
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>bridal</legend>
+            <label class="choices" >
+              <input type="checkbox" id="menuBridal" class="choices_input" name="menu[]" value="bridal">ブライダル(カウンセリング込み)
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>make</legend>
-          <label class="choices" >
-            <input type="checkbox" id="menuAdultMake" class="choices_input" name="adultmakeup">大人メイク
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuKidsMake" class="choices_input" name="kidsmakeup">キッズメイク
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuMakeLesson40" class="choices_input" name="makelesson40">メイクレッスン(40min)
-          </label>
-          <label class="choices" >
-            <input type="checkbox" id="menuMakeLesson80" class="choices_input" name="makelesson80">メイクレッスン(80min)
-          </label>
+          <fieldset>
+            <legend>make</legend>
+            <label class="choices" >
+              <input type="checkbox" id="menuAdultMake" class="choices_input" name="menu[]" value="adultmakeup">大人メイク
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuKidsMake" class="choices_input" name="menu[]" value="kidsmakeup">キッズメイク
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuMakeLesson40" class="choices_input" name="menu[]" value="makelesson40">メイクレッスン(40min)
+            </label>
+            <label class="choices" >
+              <input type="checkbox" id="menuMakeLesson80" class="choices_input" name="menu[]" value="makelesson80">メイクレッスン(80min)
+            </label>
+          </fieldset>
         </fieldset>
-
         <!-- メッセージ -->
-        <label id="otherContacts">その他のメッセージ・お問い合わせ</label>
+        <label for="message" id="otherContacts">その他のメッセージ・お問い合わせ</label>
         <textarea id="message" name="message" rows="4"></textarea>
 
         <button type="submit" id="button">送信</button>
       </form>
     </main>
-    <!-----------------------footer ------------------------>
+    <!-------------------------- footer ---------------------------->
     <footer>
       <div id="footerContent">
         <div id="footerSalonIcon">
@@ -261,7 +304,6 @@
             <img src="./assetts/img/yamasulogo_480px.png"alt="Logo" >
           </a>
         </div>
-
         <nav id="footerNav">
           <ul class="footer_ul">
             <li class="footer_li">
@@ -270,34 +312,44 @@
               </a>
             </li>
             <li class="footer_li">
-              <a href="./menu.html">
+              <a href="menu.html">
                 <img src="./assetts/img/menu.png" alt="menu">
               </a>
             </li>
             <li class="footer_li">
-              <a href= "./index.html#sns" >
+              <a href="index.html#sns">
                 <img src="./assetts/img/sns.png" alt="sns">
               </a>
             </li>
             <li class="footer_li">
-              <a href="./contact.html">
+              <a href="contact.html">
                 <img src="./assetts/img/contact.png" alt="contact" >
               </a>
             </li>
             <li class="footer_li">
-              <a href= "./index.html#access" >
+              <a href="index.html#access">
                 <img src="./assetts/img/access.png" alt="access">
+              </a>
+            </li>
+            <li class="footer_li">
+              <a href="index.html#goods">
+                <img src="./assetts/img/shop.png" alt="商品ページ">
+              </a>
+            </li>
+            <li class="footer_li">
+              <a href="index.html#school">
+                <img src="./assetts/img/school.png" alt="スクール">
               </a>
             </li>
           </ul>
           <ul class="footer_sns_icon">
             <li>
-              <a href="">
+              <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr">
                 <img src="./assetts/img/icon_facebook.png" alt="facebook">
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6">
                 <img src="./assetts/img/icon_insta.png" alt="intagram">
               </a>
             </li>
@@ -307,7 +359,7 @@
           &copy; ママのためのサロン やます
         </p>
     </footer>
-
     <script src="./script.js"></script>
+    <script src="./contact.js"></script>
   </body>
 </html>

@@ -1,7 +1,9 @@
-#menuArticle{
+#menuArticle {
   position: relative;
 }
-#effectItem{
+#effectItem {
+  position: sticky;
+  top: 0;
   width: 90%;
   height: 2.5rem;
   background-color: rgb(240, 233, 187);
@@ -12,36 +14,28 @@
   justify-content: space-around;
 }
 
-/* -------スクロールしても上部に引っかかるメニューバー-------- */
-#effectItem.fixed{
-  width: 90%;
-  height: 2.5rem;
-  box-shadow: 0.8px 0.8px 5px rgba(53, 33, 6, 0.3);
-  position: fixed;
-  top: 0; 
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-}
-
-#effectItem a{
+#effectItem a {
   position: relative;
-  color: inherit;    /* 親要素のテキストカラーを継承 */
+  color: inherit; /* 親要素のテキストカラーを継承 */
+  padding-bottom: 2px;
   text-decoration: none;
   cursor: pointer;
-  padding-bottom: 2px;
+}
+
+#effectItem a .active {
+  color: red !important;
 }
 
 /* -----メニューバー（facial）--------- */
 /* 下線を擬似要素で作成 */
 #effectItemFacial a::after {
-  content: ""; /* 擬似要素に内容を追加 */
+  content: ''; /* 擬似要素に内容を追加 */
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0; /* 初期状態では下線を非表示 */
   height: 2px; /* 下線の太さ */
-  background: rgba(130,190,200,1); /* 下線の色 */
+  background: rgba(130, 190, 200, 1); /* 下線の色 */
   transition: width 0.3s ease; /* アニメーションの速度と効果 */
 }
 
@@ -50,21 +44,21 @@
   width: 100%; /* ホバー時に下線が広がる */
 }
 
-#effectItemFacial a:hover{
-  color: rgba(130,190,200,1);
+#effectItemFacial a:hover {
+  color: rgba(130, 190, 200, 1);
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
 /* -----メニューバー（body）--------- */
 /* 下線を擬似要素で作成 */
 #effectItemBody a::after {
-  content: ""; /* 擬似要素に内容を追加 */
+  content: ''; /* 擬似要素に内容を追加 */
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0; /* 初期状態では下線を非表示 */
   height: 2px; /* 下線の太さ */
-  background: rgba(120,160,220,1); /* 下線の色 */
+  background: rgba(120, 160, 220, 1); /* 下線の色 */
   transition: width 0.3s ease; /* アニメーションの速度と効果 */
 }
 
@@ -73,21 +67,21 @@
   width: 100%; /* ホバー時に下線が広がる */
 }
 
-#effectItemBody a:hover{
-  color: rgba(120,160,220,1);
+#effectItemBody a:hover {
+  color: rgba(120, 160, 220, 1);
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
 /* -----メニューバー（head）--------- */
 /* 下線を擬似要素で作成 */
 #effectItemHead a::after {
-  content: ""; /* 擬似要素に内容を追加 */
+  content: ''; /* 擬似要素に内容を追加 */
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0; /* 初期状態では下線を非表示 */
   height: 2px; /* 下線の太さ */
-  background: rgba(180,200,150,1); /* 下線の色 */
+  background: rgba(180, 200, 150, 1); /* 下線の色 */
   transition: width 0.3s ease; /* アニメーションの速度と効果 */
 }
 
@@ -96,21 +90,21 @@
   width: 100%; /* ホバー時に下線が広がる */
 }
 
-#effectItemHead a:hover{
-  color: rgba(180,200,150,1);
+#effectItemHead a:hover {
+  color: rgba(180, 200, 150, 1);
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
 /* -----メニューバー（online facial）--------- */
 /* 下線を擬似要素で作成 */
 #effectItemOnline a::after {
-  content: ""; /* 擬似要素に内容を追加 */
+  content: ''; /* 擬似要素に内容を追加 */
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0; /* 初期状態では下線を非表示 */
   height: 2px; /* 下線の太さ */
-  background: rgba(230,190,130,1); /* 下線の色 */
+  background: rgba(230, 190, 130, 1); /* 下線の色 */
   transition: width 0.3s ease; /* アニメーションの速度と効果 */
 }
 
@@ -119,21 +113,21 @@
   width: 100%; /* ホバー時に下線が広がる */
 }
 
-#effectItemOnline a:hover{
-  color: rgba(230,190,130,1);
+#effectItemOnline a:hover {
+  color: rgba(230, 190, 130, 1);
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
 /* -----メニューバー（bridal）--------- */
 /* 下線を擬似要素で作成 */
 #effectItemBridal a::after {
-  content: ""; /* 擬似要素に内容を追加 */
+  content: ''; /* 擬似要素に内容を追加 */
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0; /* 初期状態では下線を非表示 */
   height: 2px; /* 下線の太さ */
-  background: rgba(200,160,170,1); /* 下線の色 */
+  background: rgba(200, 160, 170, 1); /* 下線の色 */
   transition: width 0.3s ease; /* アニメーションの速度と効果 */
 }
 
@@ -142,21 +136,21 @@
   width: 100%; /* ホバー時に下線が広がる */
 }
 
-#effectItemBridal a:hover{
-  color: rgba(200,160,170,1);
+#effectItemBridal a:hover {
+  color: rgba(200, 160, 170, 1);
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
 /* -----メニューバー（make lesson）--------- */
 /* 下線を擬似要素で作成 */
 #effectItemMake a::after {
-  content: ""; /* 擬似要素に内容を追加 */
+  content: ''; /* 擬似要素に内容を追加 */
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0; /* 初期状態では下線を非表示 */
   height: 2px; /* 下線の太さ */
-  background: rgba(170,150,220,1); /* 下線の色 */
+  background: rgba(170, 150, 220, 1); /* 下線の色 */
   transition: width 0.3s ease; /* アニメーションの速度と効果 */
 }
 
@@ -165,13 +159,13 @@
   width: 100%; /* ホバー時に下線が広がる */
 }
 
-#effectItemMake a:hover{
-  color: rgba(170,150,220,1);
+#effectItemMake a:hover {
+  color: rgba(170, 150, 220, 1);
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
 /* -------------○○○ facial　○○○------------- */
-.menu_content{
+.menu_content {
   width: 90%;
   height: auto;
   padding: 5% 0 5% 0;
@@ -179,16 +173,15 @@
   margin-right: auto;
 }
 
-.menu_ttl_wrap{
+.menu_ttl_wrap {
   width: 23rem;
   height: auto;
-  margin: 0 auto -10% auto;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-around;
-  background-color: pink;
 }
 
-.menu_ttl{
+.menu_ttl {
   width: 100%;
   height: auto;
   padding: auto;
@@ -198,46 +191,44 @@
   /* background-color: blue; */
 }
 
-.circle{
+.circle {
   width: 6rem;
   height: auto;
 }
 
-.add_info{
+.add_info {
   width: 90%;
   height: auto;
   font-size: 0.9rem;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #4bb7bb;
+  margin: 2rem auto 6rem auto;
 }
 
-.facial_menu{
+.facial_menu {
   width: 100%;
   height: auto;
-  margin-top: 24%;
+  margin-top: 10%;
 }
 
-.menu_text_wrap{
+.menu_text_wrap {
   width: 100%;
   height: auto;
   margin-top: 5%;
 }
 
-.menu_text{
+.menu_text {
   width: 100%;
   height: auto;
 }
 
-.treatment_name{
+.treatment_name {
   width: 100%;
   height: auto;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
-.treatment_time{
+.treatment_time {
   width: 100%;
   height: auto;
   text-align: center;
@@ -247,67 +238,81 @@
   text-decoration-color: #b1dadc;
 }
 
-.point{
+.point {
   color: #4bb7bb;
   width: 100%;
   height: auto;
   text-align: left;
 }
 
-.text_block{
+.text_block {
   width: 100%;
   height: auto;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
   background-color: #f7e2cae7;
   border-radius: 15px;
 }
 
-.price_wrap{
+.price_wrap {
+  display: flex;
   width: 100%;
   height: auto;
-  display: flex;
   margin-bottom: 1rem;
 }
 
-.member_status{
+.member_status {
   width: 100%;
   height: auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: right;
   margin-right: 1rem;
 }
 
-.price{
+.price {
   width: 100%;
   height: auto;
-  font-size: 1.2rem;
+  font-size: 0.92rem;
   text-align: left;
   margin-left: 1rem;
 }
 
-.menu_img{
+.menu_img {
   width: 100%;
   height: auto;
 }
 
-.menu_img img{
+.menu_img img {
   width: 100%;
   height: auto;
 }
 
-.text_block_sp{
+.text_block_sp {
   display: none;
 }
 
-#coupon{
+/* ------------------------○○○ facial_option  only ○○○--------------------- */
+.facial_option_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+/* ------------------------○○○ body  only ○○○--------------------- */
+.body_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+#coupon {
   width: 100%;
   text-align: center;
   /* background-color: #4bb7bb; */
 }
 
-#coupon p{
+#coupon p {
   font-size: 0.9rem;
   color: #9a8172;
   background-color: #f8f4bde7;
@@ -317,8 +322,36 @@
   padding: 1.2rem 1.6rem;
 }
 
-.great_value{
+.great_value {
   width: 100%;
   font-size: 1rem;
   color: #b3a49c;
+}
+
+/* ------------------------○○○ head  only ○○○--------------------- */
+.head_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+/* ------------------------○○○ online_facial  only ○○○--------------------- */
+.online_facial_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+/* ------------------------○○○ bridal  only ○○○--------------------- */
+.bridal_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+/* ------------------------○○○ make  only ○○○--------------------- */
+.make_menu {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
 }

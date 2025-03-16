@@ -1,28 +1,65 @@
-/* -----タブレット向け---画面幅が768pxを下回った時に適用される----- */
-@media screen and (max-width: 768px){ 
+/* -----タブレット向け---画面幅が1023pxを下回った時に適用される----- */
+@media screen and (max-width: 1023px) {
+  /* ---------------------- PC用ナビゲーション --------------------*/
+  #navPc {
+    width: 72%;
+  }
+}
+/* -----スマホ向け---画面幅が767pxを下回った時に適用される----- */
+@media screen and (max-width: 767px) {
+  /* ---------------------- PC用ナビゲーション --------------------*/
+  #navPc {
+    display: none;
+  }
+  /*---------------------- ハンバーガーナビゲーション ---------------*/
+  #navArea {
+    display: flex;
+  }
+  /* -------------------------concept--------------------------- */
+  #salonTxt,
+  #salonTxt2 {
+    font-size: 1.4rem;
+  }
 
+  #problem {
+    font-size: 1.4rem;
+  }
+  /* -------------------------sns-------------------------- */
+
+  /* ------------------------ footer ---------------------- */
+  #footerSalonIcon {
+    width: 2.4rem;
+    height: auto;
+  }
+  .footer_li img {
+    width: 80%;
+    height: auto;
+  }
+  #copy {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 
-/* -----スマホ向け---画面幅が480pxを下回った時に適用される----- */
-@media screen and (max-width: 480px){ 
-  .mainTitle{
+/* -----小型スマホ向け---画面幅が480pxを下回った時に適用される----- */
+@media screen and (max-width: 480px) {
+  #salonIcon {
+    width: 10%;
+  }
+  /* -----PC用ナビゲーション------ */
+  #navPc {
+    display: none;
+  }
+  /* ------タイトル------ */
+  .mainTitle {
     font-size: 1rem;
     letter-spacing: -3px;
   }
-  #salonIcon{
-    width: 10%;
-  }
-  #navPc{
-    display: none;
-  }
-  #navArea{
-    display: block;
-    width: 0;
-    height: 0;
-  }
-  
-  /*---------- TOPメイン画像 ---------*/
-  #subTitle{
+  #subTitle {
     width: 32%;
     height: auto;
     padding-top: 3%;
@@ -30,236 +67,83 @@
     top: 5rem;
     right: 3%;
   }
-  
-  #subTitle h2{
-    font-size: 0.7rem;
-  }
-  
-  .large_text{
-    font-size: 1rem;
-  }
-  /*---------------------------------*/
-
   /* ------------- concept ---------- */
-
-  .content_ttl{
+  .content_ttl {
     font-size: 1.2rem;
     letter-spacing: -3px;
   }
-
-  #salonTxt{
+  #salonTxt {
     font-size: 0.7rem;
   }
-
-
-  .menu_content{
-    width: 100%;
+  #salonTxt2 {
+    font-size: 1rem;
   }
-
-  #effectItem{
-    width: 80%;
-    font-size: 80%;
+  #problem {
+    font-size: 1.2rem;
   }
-
-  #effectItem.fixed{
-    width: 80%;
-    font-size: 80%;
-  }
-
   /* ----------therapist ------------- */
-
-
   #salonTxtWrap2,
   #therapistTxt2,
-  #therapistTxt3 p{
-  font-size: 0.7rem;
+  #therapistTxt3 p,
+  #therapistTxt2Name,
+  #therapistTxt2From {
+    font-size: 0.7rem;
   }
-
-  #therapistContent2{
-    background-image: url("../assetts/img/bird-2.png");
+  #therapistContent2 {
+    background-image: url('../assetts/img/bird-2.png');
     background-size: 20%;
     background-position: calc(10%) calc(100%);
   }
-
-  #therapistContent3{
-    background-image: url("../assetts/img/bird-3.png");
+  #therapistContent3 {
+    background-image: url('../assetts/img/bird-3.png');
     background-size: 35%;
     background-position: calc(32%) calc(97%);
   }
-
   /* ----------sns------------------- */
-  #snsWrap p{
+  #snsWrap p {
     font-size: 0.8rem;
   }
-
   #instagram h3,
   #facebook h3,
-  #ameblo h3{
+  #ameblo h3 {
     font-size: 0.8rem;
   }
-/* ----------access------------- */
-  #accessContent p{
+  /* ----------access------------- */
+  #accessContent p {
     font-size: 0.7rem;
   }
-  #map{
-    width: 80%;
-    height: auto;
-  }
-
-  #map iframe{
+  #map iframe {
     width: 100%;
     height: 20rem;
   }
-
   /* ------------footer------------ */
-
-  #footerContent{
+  #footerContent {
     margin-top: 10%;
   }
-
-  #footerSalonIcon{
+  #footerSalonIcon {
     width: 7%;
     margin-bottom: -8%;
   }
-
-  #footerNav{
+  #footerNav {
     width: 98%;
   }
-
-  .footer_li{
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .footer_sns_icon li{
+  .footer_sns_icon li {
     width: 33%;
   }
-
-  #copy{
+  #copy {
     font-size: 0.5rem;
   }
-
-  /* ------------- menuページ ------------- */
-
-  #navHum.fixed{
-    position: fixed;
-    top: 10rem;
-  }
-
-  .menu_content{
-    margin-top: 1rem;
-  }
-
-  #effectItem{
-    width: 100%;
-    height: 2rem;
-    margin: 0 auto 10% auto;
-  }
-
-  #effectItem.fixed{
-    width: 100%;
-  }
-
-  
-  #effectItem.fixed.toggle-btn{
-    position: fixed;
-    top: 3rem;
-    right: 1rem;
-    z-index: 100;
-  }
-  
-  .circle{
-    width: 18%;
-    height: 18%;
-  }
-
-  .menu_ttl{
-    width: 20%;
-    margin-left: -10%;
-    margin-right: -10%;
-  }
-
-  .menu_facial,
-  .menu_option,
-  .menu_body,
-  .menu_head,
-  .menu_online_facial,
-  .menu_bridal,
-  .menu_make{
-    padding-left: 1.3rem;  /*左右に余白をつける */
-    padding-right: 1.3rem; /*左右に余白をつける */
-  }
-
-  .treatment_summary,
-  .treatment_price{
-    font-size: 0.6rem;
-    padding-bottom: 2rem;
-  }
-
-  .menu_text_wrap,
-  .price{
-    font-size: 0.7rem;
-    padding-right: 2rem;
-  }
-
-  .treatment_name{
+  /* ------------- contactページ ------------- */
+  #contact {
     font-size: 0.8rem;
   }
-
-  .menu_img,
-  .text_block{
-    display: none;
-  }
-
-  .text_block_sp{
-    display: block;
-    width: 100%;
-    height: auto;
-    font-size: 0.65rem;
-    text-align: center;
-    border: 0.8px solid #D6BDA5;;
-    border-radius: 5px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: -30%;
-    margin-bottom: 6rem;
-  }
-
-  .text_block_sp p{
-    width: 80%;
-    height: auto;
-    margin: 0 auto 0 auto;
-  }
-
-
-  .add_info{
-    font-size: 0.7rem;
-  }
-
-  #coupon p{
-    font-size: 0.7rem;
-  }
-
-  #note{
-    font-size: 0.7rem;
-    text-align: center;
-  }
-
-
-    /* ------------- contactページ ------------- */
-
-  #contact{
-    font-size: 0.8rem;
-  }
-
   .contact_name,
   .contact_phone,
   .contact_email,
   .contact_date,
   .contact_time,
   #requesMenu,
-  #otherContacts{
+  #otherContacts {
     font-size: 0.8rem;
   }
-
 }

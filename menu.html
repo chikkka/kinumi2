@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/menu_responsive.css">
     <title>ママのためのサロン やます | 福岡市博多区にあるお子さん連れ大歓迎♪ママのためのサロンです。</title>
     <link rel="icon" href="./assetts/img/fabicon.ico" type="image/x-icon">
 
@@ -49,13 +50,15 @@
       })(document);
     </script>
   </head>
-
+  <!-----------------------------body---------------------------->
   <body>
     <header>
-      <a href="index.html">
-        <img id="salonIcon" src="./assetts/img/yamasulogo_480px.png">
-      </a>
-      <!-- PC用ナビゲーション -->
+      <div id="salonIcon">
+        <a href="index.html">
+          <img src="./assetts/img/yamasulogo_480px.png">
+        </a>
+      </div>
+  <!---------------------- PC用ナビゲーション ---------------------->
       <nav id="navPc">
         <ul class="nav_pc_ul">
           <li class="nav_pc_list">
@@ -64,68 +67,110 @@
             </a>
           </li>
           <li class="nav_pc_list" id="menu">
-            <a href="./menu.html">
+            <a href="menu.html">
               <img src="./assetts/img/menu.png" alt="menu">
             </a>
             <div id="dropDown"> 
-              <a href="./menu.html#facial">-&nbsp&nbspfacial<br><br></a>
-              <a href="./menu.html#body ">-&nbsp&nbspbody<br><br></a>
-              <a href="./menu.html#head">-&nbsp&nbsphead<br><br></a>
-              <a href="./menu.html#onlineFacial">-&nbsp&nbsponline&nbspfacial<br><br></a>
-              <a href="./menu.html#bridal">-&nbsp&nbspbridal<br><br></a>
+              <p>
+                <a href="./menu.html#facial">-&nbsp&nbspfacial</a>    
+              </p>
+              <p>
+                <a href="./menu.html#body ">-&nbsp&nbspbody</a>
+              </p>
+              <p>
+                <a href="./menu.html#head">-&nbsp&nbsphead</a>
+              </p>
+              <p>
+                <a href="./menu.html#onlineFacial">-&nbsp&nbsponline&nbspfacial</a>
+              </p>
+              <p>
+                <a href="./menu.html#bridal">-&nbsp&nbspbridal</a>
+              </p>
             </div>
           </li>
           <li class="nav_pc_list">
-            <a href="#sns">
+            <a href="index.html#sns">
               <img src="./assetts/img/sns.png" alt="sns">
             </a>
           </li>
           <li class="nav_pc_list">
-            <a href="./contact.html">
+            <a href="contact.html">
               <img src="./assetts/img/contact.png" alt="contact" >
             </a>
           </li>
           <li class="nav_pc_list">
-            <a href="#access">
+            <a href="index.html#access">
               <img src="./assetts/img/access.png" alt="access">
             </a>
           </li>
+          <li class="nav_pc_list">
+            <a href="index.html#goods">
+              <img src="./assetts/img/shop.png" alt="商品ページ">
+            </a>
+          </li>
+          <li class="nav_pc_list">
+            <a href="index.html#school">
+              <img src="./assetts/img/school.png" alt="スクール">
+            </a>
+          </li>
           <li class="nav_pc_list nav_sns_icon">
-            <a href="">
+            <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr">
               <img src="./assetts/img/icon_facebook.png" alt="facebook">
             </a>
           </li>
           <li class="nav_pc_list nav_sns_icon">
-            <a href="">
+            <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6">
               <img src="./assetts/img/icon_insta.png" alt="intagram">
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- ハンバーガーナビゲーション -->
+    
+    <!---------------------- ハンバーガーナビゲーション ---------------->
     <div id="navArea">
       <nav id="navHum">
         <ul>
-          <div id="hum_item_wrap">
-            <li><a href="#">Home</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="#access">Access</a></li>
-          </div>
-          <div id="hum_icon_wrap">
-            <li class="hum_insta"><a href=""><img src="./assetts/img/icon_insta.png"></a></li>
-            <li class="hum_facebook"><a href=""><img src="./assetts/img/icon_facebook.png"></a></li>
-          </div>
+          <li class="hum_item_wrap">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="index.html#access">Access</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="index.html#goods">Shop</a>
+          </li>
+          <li class="hum_item_wrap">
+            <a href="index.html#school">School</a>
+          </li>
+          <li class="hum_item_wrap">
+            <div id="hum_icon_wrap">
+              <div class="hum_insta">
+                <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6"><img src="./assetts/img/icon_insta.png"></a>
+              </div>
+            </div>
+            <div id="hum_icon_wrap">
+              <div class="hum_facebook">
+                <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr"><img src="./assetts/img/icon_facebook.png"></a>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="toggle-btn">
-        <span></span>
-        <span></span>
+        <span ></span>
+        <span ></span>
         <span></span>
       </div>
     </div>
-    <main>      
+      <!----------------------------- main --------------------------->
+    <main>
       <!----------------- main ------------------->
       <h1 class="mainTitle">ママのためのサロン&nbsp;&nbspやます</h1>
       <article id="menuArticle">
@@ -148,14 +193,14 @@
             <a href="#bridal">bridal.</a>
           </p>
           <p id="effectItemMake">
-            <a href="#makeLesson">make lesson.</a>
+            <a href="#make">make lesson.</a>
           </p>
         </div>
 <!------------------------ facial ------------------>
-        <section class="menu_content">
+        <section class="menu_content" id="facial">
           <div class="menu_ttl_wrap">
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
-            <h3 class="menu_ttl" id="facial">facial</h3>            
+            <h3 class="menu_ttl">facial</h3>            
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
           </div>
           <section class="facial_menu">
@@ -190,6 +235,7 @@
           </section>
 
           <section class="facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -225,6 +271,7 @@
           </section>
 
           <section class="facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -260,6 +307,7 @@
           </section>
 
           <section class="facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -297,6 +345,7 @@
           </section>
 
           <section class="facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -336,6 +385,7 @@
           </section>
 
           <section class="facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -375,6 +425,7 @@
           </section>
 
           <section class="facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -391,7 +442,7 @@
             </div>
             <div class="price_wrap">
                 <p class="member_status">一般・メンバー</p>
-                <p class="price">¥3,000 ~ ¥6,000</p>
+                <p class="price">¥3,000  ~  ¥6,000</p>
             </div>
             <div class="menu_img">
               <img src="./assetts/img/therapist.jpg" alt="施術イメージ">
@@ -413,10 +464,8 @@
           </div>
           <div>
             <p class="add_info">
-              フェイシャルメニューと組み合わせてご利用いただける<br>
-              オプションメニューです。<br>
-              目的別に効果を高める施術が可能です。 <br>
-              特別な日の前のお手入れにもオススメです🌟
+              フェイシャルメニューと組み合わせてご利用いただけるオプションメニューです。<br>
+              目的別に効果を高める施術が可能です。 <br>特別な日の前のお手入れにもオススメです🌟
             </p>
           </div>
           <section class="facial_option_menu">
@@ -454,6 +503,7 @@
           </section>
 
           <section class="facial_option_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -488,6 +538,7 @@
           </section>
 
           <section class="facial_option_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -518,6 +569,7 @@
           </section>
 
           <section class="facial_option_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -547,6 +599,7 @@
 
 
           <section class="facial_option_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -583,6 +636,7 @@
 
 
           <section class="facial_option_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -618,10 +672,10 @@
         </section>
 
         <!-------------------- body ------------------------------->
-        <section class="menu_content">
+        <section class="menu_content" id="body">
           <div class="menu_ttl_wrap">
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
-            <h3 class="menu_ttl" id="body">body</h3>
+            <h3 class="menu_ttl">body</h3>
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
           </div>
           <div class="add_info">
@@ -662,6 +716,7 @@
           </section>
 
           <section class="body_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -694,6 +749,7 @@
           </section>
 
           <section class="body_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -745,6 +801,7 @@
           </section>
 
           <section class="body_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -761,10 +818,10 @@
         </section>
 
       <!--------------------------- head ----------------------->
-        <section class="menu_content">
+        <section class="menu_content"  id="head">
           <div class="menu_ttl_wrap">
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
-            <h3 class="menu_ttl" id="head">head</h3>
+            <h3 class="menu_ttl">head</h3>
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
           </div>
           <section class="head_menu">
@@ -802,6 +859,7 @@
           </section>
 
           <section class="head_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -836,6 +894,7 @@
           </section>
 
           <section class="head_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -847,16 +906,17 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥1,500</p>
             </div>
           </section>
         </section>
 
       <!------------------------- online facial ------------------------->
-        <section class="menu_content">
+        <section class="menu_content" id="onlineFacial">
           <div class="menu_ttl_wrap">
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
-            <h3 class="menu_ttl" id="onlineFacial">online facial</h3>
+            <h3 class="menu_ttl">online facial</h3>
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
           </div>
           <div>
@@ -872,6 +932,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥3,000</p>
             </div>
             <div class="menu_img">
@@ -880,6 +941,7 @@
           </section>
 
           <section class="online_facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -888,6 +950,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥2,000</p>
             </div>
             <div class="menu_img">
@@ -896,6 +959,7 @@
           </section>
 
           <section class="online_facial_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -904,6 +968,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥3,500</p>
             </div>
             <div class="menu_img">
@@ -913,16 +978,16 @@
         </section>
 
       <!----------------------------- bridal -------------------------->
-        <section class="menu_content">
+        <section class="menu_content" id="bridal">
           <div class="menu_ttl_wrap">
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
-            <h3 class="menu_ttl" id="bridal">bridal</h3>
+            <h3 class="menu_ttl">bridal</h3>
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
           </div>
           <div>
             <p class="add_info">あなたのドレスに合わせた完全オーダーメイドコース。<br>オールハンドで整えていきます。</p>
           </div>
-          <section class="head_menu">
+          <section class="bridal_menu">
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -938,7 +1003,8 @@
               </div>
             </div>
             <div class="price_wrap">
-              <p class="price">¥1,1000 ~ </p>
+              <p class="member_status">一般・メンバー</p>
+              <p class="price">¥1,1000  ~  </p>
             </div>
             <div class="menu_img">
               <img src="./assetts/img/therapist.jpg" alt="施術イメージ">
@@ -952,16 +1018,16 @@
         </section>  
 
       <!----------------------------- make -------------------------->
-        <section class="menu_content">
+        <section class="menu_content" id="make">
           <div class="menu_ttl_wrap">
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
-            <h3 class="menu_ttl" id="make">make</h3>
+            <h3 class="menu_ttl">make</h3>
             <img class="circle" src="./assetts/img/menu_ttl_deco.png" alt="イラスト(丸)">
           </div>
           <div>
             <p class="add_info">メイクレッスンは2名以上の場合10%OFF 🎉<br>表示価格は全て税抜き価格です</p>
           </div>
-          <section class="head_menu">
+          <section class="make_menu">
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -970,6 +1036,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥3,500</p>
             </div>
             <div class="menu_img">
@@ -977,7 +1044,8 @@
             </div>
           </section>
 
-          <section class="head_menu">
+          <section class="make_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -986,6 +1054,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥1,500</p>
             </div>
             <div class="menu_img">
@@ -993,7 +1062,8 @@
             </div>
           </section>
 
-          <section class="head_menu">
+          <section class="make_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -1002,6 +1072,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥1,000</p>
             </div>
             <div class="menu_img">
@@ -1009,7 +1080,8 @@
             </div>
           </section>
 
-          <section class="head_menu">
+          <section class="make_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -1021,6 +1093,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥1,500</p>
             </div>
             <div class="menu_img">
@@ -1028,7 +1101,8 @@
             </div>
           </section>
 
-          <section class="head_menu">
+          <section class="make_menu">
+            <p class="dot_line"></p>
             <div class="menu_text_wrap">
               <div class="menu_text">
                 <h4 class="treatment_name">
@@ -1040,6 +1114,7 @@
               </div>
             </div>
             <div class="price_wrap">
+              <p class="member_status">一般・メンバー</p>
               <p class="price">¥2,500</p>
             </div>
             <div class="menu_img">
@@ -1047,21 +1122,19 @@
             </div>
           </section>
           <div>
-            <p id="note">出張の場合、10:00 ~ 17:00以外は + ¥1,100<br>交通費を別途頂戴いたします。</p>
+            <p id="note">出張の場合、10:00  ~  17:00以外は + ¥1,100<br>交通費を別途頂戴いたします。</p>
           </div>
         </section> 
       </article>
     </main>
-
-    <!-----------------------footer ------------------------>
+    <!-------------------------- footer ---------------------------->
     <footer>
       <div id="footerContent">
         <div id="footerSalonIcon">
-          <a href="./index.html">
+          <a href=" index.html">
             <img src="./assetts/img/yamasulogo_480px.png"alt="Logo" >
           </a>
         </div>
-
         <nav id="footerNav">
           <ul class="footer_ul">
             <li class="footer_li">
@@ -1075,7 +1148,7 @@
               </a>
             </li>
             <li class="footer_li">
-              <a href="./index.html#sns">
+              <a href="index.html#sns">
                 <img src="./assetts/img/sns.png" alt="sns">
               </a>
             </li>
@@ -1085,19 +1158,29 @@
               </a>
             </li>
             <li class="footer_li">
-              <a href="./index.html#access">
+              <a href="index.html#access">
                 <img src="./assetts/img/access.png" alt="access">
+              </a>
+            </li>
+            <li class="footer_li">
+              <a href="index.html#goods">
+                <img src="./assetts/img/shop.png" alt="商品ページ">
+              </a>
+            </li>
+            <li class="footer_li">
+              <a href="index.html#school">
+                <img src="./assetts/img/school.png" alt="スクール">
               </a>
             </li>
           </ul>
           <ul class="footer_sns_icon">
             <li>
-              <a href="">
+              <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr">
                 <img src="./assetts/img/icon_facebook.png" alt="facebook">
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6">
                 <img src="./assetts/img/icon_insta.png" alt="intagram">
               </a>
             </li>

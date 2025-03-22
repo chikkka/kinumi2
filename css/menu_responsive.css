@@ -28,4 +28,9 @@
   .treatment_name {
     font-size: 0.88rem;
   }
+
+  .circle {
+    width: 28%;
+    height: auto;
+  }
 }

@@ -5,10 +5,10 @@ body {
   padding: 0px;
   margin: 0;
   background-color: #fffcef;
-  /* フォントを追加（マメロン） */
-  font-family: mamelon, sans-serif;
+  /* フォントを追加（筑紫A丸ゴシック） */
+  font-family: fot-tsukuardgothic-std, sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
   color: #6c6059;
 }
 
@@ -260,6 +260,7 @@ header {
 .mainTitle {
   width: 100%;
   height: auto;
+  color: #9e7f63;
   /* フォントを’ab-kirigirisu’に指定する */
   font-family: ab-kirigirisu, sans-serif;
   font-style: normal;
@@ -350,11 +351,12 @@ header {
 #salonTxt {
   color: #9e7f63;
   font-size: 1.6rem;
-  /* フォントを’ab-kirigirisu’に指定する*/
-  font-family: ab-kirigirisu, sans-serif;
-  letter-spacing: -1px; /* 文字間隔を狭める */
-  line-height: 2;
+  /* フォントを’ads-soyokaze’に指定する*/
+  font-family: ads-soyokaze, sans-serif;
   font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px; /*文字間隔*/
+  line-height: 1.8; /*行間*/
 }
 
 #conceptImg {
@@ -471,11 +473,12 @@ header {
   margin: 0 auto 0 auto;
   font-size: 1.6rem;
   color: #9e7f63;
-  /* フォントを’ab-kirigirisu’に指定する*/
-  font-family: ab-kirigirisu, sans-serif;
-  letter-spacing: -5px; /* 文字間隔を狭める */
-  line-height: 2;
+  /* フォントを’ads-soyokaze’に指定する*/
+  font-family: ads-soyokaze, sans-serif;
   font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px; /*文字間隔*/
+  line-height: 1.8; /*行間*/
 }
 
 #beauty,
@@ -503,11 +506,12 @@ header {
 #problem {
   font-size: 1.5rem;
   color: rgb(105, 181, 215);
-  /* フォントを’ab-kirigirisu’に指定する*/
-  font-family: ab-kirigirisu, sans-serif;
-  letter-spacing: -1px; /* 文字間隔を狭める */
-  line-height: 2;
+  /* フォントを’ads-soyokaze’に指定する*/
+  font-family: ads-soyokaze, sans-serif;
   font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px; /*文字間隔*/
+  line-height: 1.8; /*行間*/
 }
 
 /* ------------------------therapist-------------------------- */

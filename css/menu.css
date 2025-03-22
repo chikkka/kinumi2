@@ -174,25 +174,20 @@
 }
 
 .menu_ttl_wrap {
-  width: 23rem;
-  height: auto;
   margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
 .menu_ttl {
-  width: 100%;
+  /* width: 50rem; */
   height: auto;
-  padding: auto;
-  margin: auto;
   font-size: 1.2rem;
   text-align: center;
-  /* background-color: blue; */
 }
 
 .circle {
-  width: 6rem;
+  width: 20%;
   height: auto;
 }
 

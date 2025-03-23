@@ -24,7 +24,37 @@
   #problem {
     font-size: 1.4rem;
   }
-  /* -------------------------sns-------------------------- */
+  /* -------------------------banner-------------------------- */
+  #banner {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  /* ----------------------------- school ---------------------- */
+  #school {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #school img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ----------------------------- goods ---------------------- */
+  #goods {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin: auto;
+  }
+
+  #goods img {
+    width: 100%;
+    height: auto;
+  }
 
   /* ------------------------ footer ---------------------- */
   #footerSalonIcon {

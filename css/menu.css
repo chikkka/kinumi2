@@ -180,10 +180,14 @@
 }
 
 .menu_ttl {
-  /* width: 50rem; */
+  width: 8rem;
   height: auto;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: center;
+  /* ------------フォントをADSそよ風に指定-------- */
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .circle {
@@ -219,8 +223,12 @@
 .treatment_name {
   width: 100%;
   height: auto;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: center;
+  /* ------------フォントをADSそよ風に指定-------- */
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .treatment_time {
@@ -238,6 +246,10 @@
   width: 100%;
   height: auto;
   text-align: left;
+  /* ------------フォントをADSそよ風に指定-------- */
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .text_block {

@@ -272,8 +272,8 @@ header {
 
 #subTitle {
   position: absolute;
-  top: 10rem;
-  right: 3%;
+  top: 4.4%;
+  right: 4%;
   width: 24%;
   height: auto;
 }
@@ -295,6 +295,11 @@ header {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* ---------------------パソコン用トップページ画像---------------------*/
+#mainVisualPc {
+  padding-top: 10%;
 }
 
 /* ---------------------スマホ用トップページ画像---------------------*/

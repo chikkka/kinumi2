@@ -15,6 +15,12 @@
   #navArea {
     display: flex;
   }
+  /* ---------------------タイトル--------------------------------x */
+  #subTitle {
+    position: absolute;
+    top: 3.2%;
+    right: 4%;
+  }
   /* -------------------------concept--------------------------- */
   #salonTxt,
   #salonTxt2 {
@@ -90,12 +96,11 @@
     letter-spacing: -3px;
   }
   #subTitle {
-    width: 32%;
-    height: auto;
-    padding-top: 3%;
     position: absolute;
-    top: 5rem;
-    right: 3%;
+    top: 3.2%;
+    right: 4%;
+    width: 24%;
+    height: auto;
   }
   /* ------------- concept ---------- */
   .content_ttl {

@@ -16,14 +16,23 @@
   margin-right: auto;
 }
 
+label {
+  margin-top: 5%;
+}
+
 .contact_name,
 .contact_phone,
 .contact_email,
 .contact_date,
 .contact_time,
+.contact_menu,
 #requestMenu,
 #otherContacts {
   font-size: 0.9rem;
+}
+
+.contact_menu {
+  margin-top: 32%;
 }
 
 #name,
@@ -43,7 +52,7 @@
   font-size: 0.8rem;
 }
 
-legend {
+.select_menu {
   color: #d6bda5;
   font-size: 1rem;
   margin-top: 1.2rem;

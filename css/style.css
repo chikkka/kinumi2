@@ -255,7 +255,12 @@ header {
   background-color: #d6bda5;
   border-radius: 15px;
 }
-
+/* -----------------------main------------------------------ */
+main {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 /* -----------------------タイトル------------------------------ */
 .mainTitle {
   width: 100%;
@@ -299,6 +304,8 @@ header {
 
 /* ---------------------パソコン用トップページ画像---------------------*/
 #mainVisualPc {
+  width: 100%;
+  height: auto;
   padding-top: 10%;
 }
 
@@ -349,13 +356,14 @@ header {
 #salonTxtWrap {
   width: 100%;
   height: auto;
-  margin-top: 8%;
   text-align: center;
 }
 
 #salonTxt {
+  display: block;
+  margin-top: 20%;
   color: #9e7f63;
-  font-size: 1.6rem;
+  font-size: 2rem;
   /* フォントを’ads-soyokaze’に指定する*/
   font-family: ads-soyokaze, sans-serif;
   font-style: normal;
@@ -416,16 +424,28 @@ header {
   width: 80%;
   height: auto;
   margin: 5rem auto 0 auto;
-  display: flex;
-  justify-content: center;
 }
 
 #conceptDescription2 {
   width: 100%;
   height: auto;
-  display: flex;
-  position: relative;
-  margin-top: 5%;
+}
+
+/* ---身近なものでキレイにかわいくなれる方法を・・・-- */
+#salonTxt2 {
+  display: block;
+  margin: 10% auto 10% auto;
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  color: #9e7f63;
+  text-align: center;
+  /* フォントを’ads-soyokaze’に指定する*/
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px; /*文字間隔*/
+  line-height: 2.4; /*行間*/
 }
 
 #therapistImg1 {
@@ -465,27 +485,6 @@ header {
   mask-size: cover;
 }
 
-#salonTxtWrap2 {
-  width: 50%;
-  height: auto;
-  font-size: 0.9rem;
-}
-
-/* ---身近なものでキレイにかわいくなれる方法を・・・-- */
-#salonTxt2 {
-  width: 80%;
-  height: auto;
-  margin: 0 auto 0 auto;
-  font-size: 1.6rem;
-  color: #9e7f63;
-  /* フォントを’ads-soyokaze’に指定する*/
-  font-family: ads-soyokaze, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 1.6px; /*文字間隔*/
-  line-height: 1.8; /*行間*/
-}
-
 #beauty,
 #cute {
   color: rgb(255, 181, 128);
@@ -498,18 +497,28 @@ header {
 }
 
 #salonTxtWrap3 {
+  width: 100%;
+  height: auto;
+}
+
+#salonTxt3 {
+  display: block;
   width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-}
-
-#salonTxt3 {
+  text-align: center;
   font-size: 0.95rem;
 }
 
 #problem {
-  font-size: 1.5rem;
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2rem;
   color: rgb(105, 181, 215);
   /* フォントを’ads-soyokaze’に指定する*/
   font-family: ads-soyokaze, sans-serif;
@@ -535,16 +544,16 @@ header {
   width: 80%;
   height: auto;
   margin: 10% auto 0 auto;
+  padding-bottom: 10%;
   background-image: url('../assetts/img/bird-2.png');
   background-repeat: no-repeat;
-  background-size: 7rem;
-  background-position: calc(5%) calc(140%);
+  background-size: 16%;
+  background-position: calc(14%) calc(90%);
 }
 
 #therapistTxt2 {
   width: 50%;
   height: auto;
-  padding-top: 8%;
   text-align: center;
 }
 
@@ -552,18 +561,29 @@ header {
   width: 100%;
   height: auto;
   font-size: 1.2rem;
+  margin-top: 10%;
 }
 
 #therapistTxt2From {
   width: 100%;
   height: auto;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 10%;
+}
+
+.career {
+  display: block;
+  margin-top: 10%;
+  margin-right: 8%;
+  text-align: left;
 }
 
 #therapistImg2 {
   width: 50%;
   height: auto;
+  margin-top: 10%;
 }
+
 #therapistImg2 img {
   width: 100%;
   height: auto;
@@ -597,16 +617,17 @@ header {
 }
 
 #therapistTxt3 {
-  width: 70%;
+  width: 90%;
   height: auto;
-}
-
-#therapistTxt3 p {
-  width: 80%;
-  height: auto;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-me {
+  display: block;
+  margin-top: 8%;
+  margin-left: 8%;
 }
 
 /* -----------------------sns--------------------------------- */

@@ -1,10 +1,41 @@
+/* -----大きいPC幅向け---画面幅が1200pxを上回った時に適用される----- */
+@media screen and (min-width: 1200px) {
+  header,
+  #navArea,
+  main,
+  footer,
+  #conceptWrap,
+  #therapistWrap {
+    max-width: 1200px;
+    margin: 10% auto;
+    padding: 0 20px;
+  }
+
+  #subTitle {
+    position: absolute;
+    top: 4.4%;
+    right: 4%;
+    width: 24%;
+    height: auto;
+  }
+  #subTitle img {
+    width: 100%;
+    height: auto;
+  }
+}
 /* -----タブレット向け---画面幅が1023pxを下回った時に適用される----- */
 @media screen and (max-width: 1023px) {
   /* ---------------------- PC用ナビゲーション --------------------*/
   #navPc {
     width: 72%;
   }
+  /* -------------------------concept--------------------------- */
+  #salonTxt,
+  #salonTxt2 {
+    font-size: 1.6rem;
+  }
 }
+
 /* -----スマホ向け---画面幅が767pxを下回った時に適用される----- */
 @media screen and (max-width: 767px) {
   /* ---------------------- PC用ナビゲーション --------------------*/
@@ -22,14 +53,46 @@
     right: 4%;
   }
   /* -------------------------concept--------------------------- */
-  #salonTxt,
+  #salonTxt {
+    font-size: 1.2rem;
+  }
+
   #salonTxt2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   #problem {
     font-size: 1.4rem;
   }
+
+  /* ------------------------therapist ------------------------- */
+
+  #therapistContent2 {
+    display: block;
+    padding-bottom: 20%;
+  }
+
+  #therapistTxt2 {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+
+  .career {
+    margin: 6% auto 0 auto;
+    text-align: center;
+  }
+
+  #therapistImg2 {
+    margin: 20% auto 0 auto;
+  }
+
+  #therapistTxt2,
+  #therapistTxt3 p,
+  #therapistTxt2Name,
+  #therapistTxt2From {
+    font-size: 0.8rem;
+  }
+
   /* -------------------------banner-------------------------- */
   #banner {
     display: block;
@@ -79,6 +142,15 @@
     font-size: 0.8rem;
     text-align: center;
   }
+  /* ------------contactページ-------------------- */
+  #name,
+  #phone,
+  #email,
+  #message {
+    width: 64%;
+    background-color: #ece3d9;
+    border-radius: 10px;
+  }
 }
 
 /* -----小型スマホ向け---画面幅が480pxを下回った時に適用される----- */
@@ -111,24 +183,23 @@
     font-size: 0.7rem;
   }
   #salonTxt2 {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   #problem {
     font-size: 1.2rem;
   }
   /* ----------therapist ------------- */
-  #salonTxtWrap2,
   #therapistTxt2,
   #therapistTxt3 p,
   #therapistTxt2Name,
   #therapistTxt2From {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
-  #therapistContent2 {
-    background-image: url('../assetts/img/bird-2.png');
-    background-size: 20%;
-    background-position: calc(10%) calc(100%);
+
+  #therapistImg2 {
+    margin-top: 40%;
   }
+
   #therapistContent3 {
     background-image: url('../assetts/img/bird-3.png');
     background-size: 35%;
@@ -180,5 +251,14 @@
   #requesMenu,
   #otherContacts {
     font-size: 0.8rem;
+  }
+
+  #name,
+  #phone,
+  #email,
+  #message {
+    width: 50%;
+    background-color: #ece3d9;
+    border-radius: 10px;
   }
 }

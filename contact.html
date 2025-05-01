@@ -201,9 +201,9 @@
 
         <!-- 希望メニュー -->
         <fieldset>
-          <legend>ご希望の施術メニュー( 複数選択可 )</legend>
+          <legend class="contact_menu">ご希望の施術メニュー( 複数選択可 )</legend>
           <fieldset>
-            <legend>facial</legend>
+            <legend class="select_menu">facial</legend>
             <label class="choices" >
               <input type="checkbox" id="menuSonic" class="choices_input" name="menu[]" value="sonic">超音波ソニック
             </label> 
@@ -228,7 +228,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>body</legend>
+            <legend class="select_menu">body</legend>
             <label class="choices">
               <input type="checkbox" id="menuAll70" class="choices_input" name="menu[]" value="all70">全身(70min)
             </label>
@@ -241,7 +241,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>head</legend>
+            <legend class="select_menu">head</legend>
             <label class="choices" >
               <input type="checkbox" id="menuHead60" class="choices_input" name="menu[]" value="head60">60min
             </label>
@@ -254,7 +254,7 @@
           </fieldset>
 
           <fieldset>
-            <legend>online facial</legend>
+            <legend class="select_menu">online facial</legend>
             <label class="choices" >
               <input type="checkbox" id="menuOnlineSphere" class="choices_input" name="menu[]" value="online-sphere">3Dスフィア
             </label>
@@ -267,14 +267,14 @@
           </fieldset>
 
           <fieldset>
-            <legend>bridal</legend>
+            <legend class="select_menu">bridal</legend>
             <label class="choices" >
               <input type="checkbox" id="menuBridal" class="choices_input" name="menu[]" value="bridal">ブライダル(カウンセリング込み)
             </label>
           </fieldset>
 
           <fieldset>
-            <legend>make</legend>
+            <legend class="select_menu">make</legend>
             <label class="choices" >
               <input type="checkbox" id="menuAdultMake" class="choices_input" name="menu[]" value="adultmakeup">大人メイク
             </label>
@@ -290,7 +290,7 @@
           </fieldset>
         </fieldset>
         <!-- メッセージ -->
-        <label for="message" id="otherContacts">その他のメッセージ・お問い合わせ</label>
+        <label for="message" id="otherContacts" class="select_menu">その他のメッセージ・お問い合わせ</label>
         <textarea id="message" name="message" rows="4"></textarea>
 
         <button type="submit" id="button">送信</button>

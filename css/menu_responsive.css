@@ -4,11 +4,36 @@
 /* -----スマホ向け---画面幅が767pxを下回った時に適用される----- */
 @media screen and (max-width: 767px) {
   #effectItem a {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
+  }
+
+  .menu_ttl_wrap,
+  .menu_ttl_wrap_online {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu_ttl,
+  .menu_ttl_online {
+    font-weight: 200;
+  }
+
+  .menu_ttl {
+    font-size: 1rem;
+  }
+
+  .menu_ttl_online {
+    font-size: 0.9rem;
+  }
+
+  .circle,
+  .circle_online {
+    width: 20%;
+    height: auto;
   }
 
   .text_block {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
 
   .treatment_name {
@@ -18,15 +43,15 @@
 /* -----小型スマホ向け---画面幅が480pxを下回った時に適用される----- */
 @media screen and (max-width: 480px) {
   #effectItem a {
-    font-size: 0.6rem;
+    font-size: 0.875rem;
   }
 
   .text_block {
-    font-size: 0.6rem;
+    font-size: 0.875rem;
   }
 
   .treatment_name {
-    font-size: 0.88rem;
+    font-size: 0.875rem;
   }
 
   .circle {

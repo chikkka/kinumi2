@@ -30,7 +30,6 @@
     width: 72%;
   }
   /* -------------------------concept--------------------------- */
-  #salonTxt,
   #salonTxt2 {
     font-size: 1.6rem;
   }
@@ -59,6 +58,10 @@
 
   #salonTxt2 {
     font-size: 1rem;
+  }
+
+  .salonTxt3 {
+    font-size: 0.875rem;
   }
 
   #problem {
@@ -90,7 +93,13 @@
   #therapistTxt3 p,
   #therapistTxt2Name,
   #therapistTxt2From {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
+  }
+
+  #map {
+    width: 100%;
+    margin: 10% auto 10% auto;
+    background-color: pink;
   }
 
   /* -------------------------banner-------------------------- */
@@ -101,28 +110,13 @@
 
   /* ----------------------------- school ---------------------- */
   #school {
-    width: 90%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #school img {
-    width: 100%;
-    height: auto;
-  }
-
   /* ----------------------------- goods ---------------------- */
   #goods {
-    width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin: auto;
-  }
-
-  #goods img {
-    width: 100%;
-    height: auto;
+    margin: 4% auto 0 auto;
   }
 
   /* ------------------------ footer ---------------------- */
@@ -139,7 +133,7 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     text-align: center;
   }
   /* ------------contactページ-------------------- */
@@ -180,11 +174,16 @@
     letter-spacing: -3px;
   }
   #salonTxt {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
   }
   #salonTxt2 {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
+
+  .salonTxt3 {
+    font-size: 0.875rem;
+  }
+
   #problem {
     font-size: 1.2rem;
   }
@@ -193,7 +192,7 @@
   #therapistTxt3 p,
   #therapistTxt2Name,
   #therapistTxt2From {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   #therapistImg2 {
@@ -207,16 +206,16 @@
   }
   /* ----------sns------------------- */
   #snsWrap p {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
   #instagram h3,
   #facebook h3,
   #ameblo h3 {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
   /* ----------access------------- */
   #accessContent p {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
   }
   #map iframe {
     width: 100%;
@@ -230,18 +229,12 @@
     width: 7%;
     margin-bottom: -8%;
   }
-  #footerNav {
-    width: 98%;
-  }
-  .footer_sns_icon li {
-    width: 33%;
-  }
   #copy {
-    font-size: 0.5rem;
+    font-size: 0.875rem;
   }
   /* ------------- contactページ ------------- */
   #contact {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
   .contact_name,
   .contact_phone,
@@ -250,7 +243,7 @@
   .contact_time,
   #requesMenu,
   #otherContacts {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
 
   #name,

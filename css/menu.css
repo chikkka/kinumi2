@@ -164,6 +164,78 @@
   transition: color 0.3s ease; /* アニメーションの速度と効果 */
 }
 
+/* -----------------menu archive --------------- */
+.menu_archive_wrap {
+  width: 90%;
+  height: auto;
+  padding: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 248, 227);
+  border-radius: 15px;
+}
+
+.menu_archive_wrap h2 {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.menu_archive_wrap div {
+  margin-top: 14%;
+}
+
+.menu_archive_ttl {
+  display: inline-block;
+  margin-top: 6%;
+  font-size: 0.95rem;
+  border-bottom: 3px solid rgb(233, 209, 211);
+}
+
+.more {
+  display: inline-block;
+  margin-left: 4%;
+  font-size: 0.8rem;
+  border-bottom: 3px solid rgb(233, 209, 211);
+}
+
+.more a:hover {
+  color: rgb(233, 209, 211);
+}
+
+.menu_archive {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  border-bottom: 0.18rem dotted rgb(228, 205, 174);
+}
+
+.item_name {
+  display: block;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #9a8172;
+}
+
+.item_price {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: 8%;
+  color: #009ba0;
+  font-size: 0.875rem;
+}
+
 /* -------------○○○ facial　○○○------------- */
 .menu_content {
   width: 90%;
@@ -173,16 +245,17 @@
   margin-right: auto;
 }
 
-.menu_ttl_wrap {
+.menu_ttl_wrap,
+.menu_ttl_wrap_online {
   margin: 0 auto 0 auto;
   display: flex;
   justify-content: space-around;
+  width: 60%;
+  height: auto;
 }
 
-.menu_ttl {
-  width: 8rem;
-  height: auto;
-  font-size: 1.6rem;
+.menu_ttl,
+.menu_ttl_online {
   text-align: center;
   /* ------------フォントをADSそよ風に指定-------- */
   font-family: ads-soyokaze, sans-serif;
@@ -190,8 +263,17 @@
   font-weight: 400;
 }
 
-.circle {
-  width: 20%;
+.menu_ttl {
+  font-size: 1.6rem;
+}
+
+.menu_ttl_online {
+  font-size: 1.4rem;
+}
+
+.circle,
+.circle_online {
+  width: 30%;
   height: auto;
 }
 

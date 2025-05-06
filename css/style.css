@@ -338,9 +338,20 @@ main {
   color: #d6bda5;
 }
 
-#conceptContent1 {
+/* --------サイトの横幅を統一させる----------- */
+#conceptContent1,
+#conceptContent2,
+#conceptContent3,
+#therapistContent2,
+#therapistContent3,
+#snsContent,
+#accessContent,
+#banner {
   width: 80%;
   height: auto;
+}
+
+#conceptContent1 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -363,7 +374,7 @@ main {
   display: block;
   margin-top: 20%;
   color: #9e7f63;
-  font-size: 2rem;
+  font-size: 1.4rem;
   /* フォントを’ads-soyokaze’に指定する*/
   font-family: ads-soyokaze, sans-serif;
   font-style: normal;
@@ -421,8 +432,6 @@ main {
 }
 
 #conceptContent2 {
-  width: 80%;
-  height: auto;
   margin: 5rem auto 0 auto;
 }
 
@@ -491,9 +500,7 @@ main {
 }
 
 #conceptContent3 {
-  width: 100%;
-  height: auto;
-  margin-top: 5rem;
+  margin: 10% auto 0 auto;
 }
 
 #salonTxtWrap3 {
@@ -501,14 +508,13 @@ main {
   height: auto;
 }
 
-#salonTxt3 {
+.salonTxt3 {
   display: block;
   width: 80%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 6% auto 0 auto;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 #problem {
@@ -541,8 +547,6 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 80%;
-  height: auto;
   margin: 10% auto 0 auto;
   padding-bottom: 10%;
   background-image: url('../assetts/img/bird-2.png');
@@ -567,7 +571,7 @@ main {
 #therapistTxt2From {
   width: 100%;
   height: auto;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin-top: 10%;
 }
 
@@ -592,8 +596,6 @@ main {
 
 #therapistContent3 {
   display: flex;
-  width: 80%;
-  height: auto;
   padding-bottom: 10rem; /*小鳥の画像を下方に置くために*/
   margin: 5rem auto 0 auto;
   background-image: url('../assetts/img/bird-3.png');
@@ -619,7 +621,7 @@ main {
 #therapistTxt3 {
   width: 90%;
   height: auto;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -643,14 +645,12 @@ main {
 #snsWrap p {
   width: 100%;
   height: auto;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   margin-top: 1rem;
 }
 
 #snsContent {
-  width: 80%;
-  height: auto;
   margin: 10% auto 0 auto;
 }
 
@@ -755,8 +755,6 @@ main {
 }
 
 #accessContent {
-  width: 80%;
-  height: auto;
   margin: 2rem auto 0 auto;
 }
 
@@ -777,7 +775,7 @@ main {
 }
 
 .itemTtl {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   padding-top: 20px;
   color: #d6bda5;
 }
@@ -792,15 +790,12 @@ main {
 /*------------------------------ banner ---------------------- */
 #banner {
   display: flex;
-  margin-bottom: 10%;
+  margin: 0 auto 10% auto;
 }
 
 /* ----------------------------- school ---------------------- */
 #school {
-  width: 70%;
-  height: auto;
-  padding-left: 1%;
-  padding-right: 1%;
+  margin-right: 4%;
 }
 
 #school img {
@@ -809,13 +804,6 @@ main {
 }
 
 /* ----------------------------- goods ---------------------- */
-#goods {
-  width: 30%;
-  height: auto;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
 #goods img {
   width: 100%;
   height: auto;
@@ -845,11 +833,10 @@ main {
 .footer_ul {
   display: flex;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
   height: auto;
   padding: 0;
   margin: 50px auto 0 auto;
-  /* background-color: aquamarine; */
 }
 
 .footer_li {
@@ -857,7 +844,7 @@ main {
 }
 
 .footer_li img {
-  width: 60%;
+  width: 80%;
   height: auto;
 }
 

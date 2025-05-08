@@ -175,6 +175,14 @@
   border-radius: 15px;
 }
 
+#priiceList {
+  font-size: 1rem;
+  /* ------------フォントをADSそよ風に指定-------- */
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .menu_archive_wrap h2 {
   text-align: center;
   font-size: 0.95rem;
@@ -195,11 +203,6 @@
   display: inline-block;
   margin-left: 4%;
   font-size: 0.8rem;
-  border-bottom: 3px solid rgb(233, 209, 211);
-}
-
-.more a:hover {
-  color: rgb(233, 209, 211);
 }
 
 .menu_archive {
@@ -209,12 +212,90 @@
   padding-bottom: 2%;
 }
 
+.archive_facial {
+  border-bottom: 1.8px solid rgba(130, 190, 200, 1);
+}
+
+.archive_facial :hover {
+  color: rgba(130, 190, 200, 1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+.item_facial {
+  color: rgb(99, 145, 153);
+}
+
+.archive_body {
+  border-bottom: 1.8px solid rgba(120, 160, 220, 1);
+}
+
+.archive_body :hover {
+  color: rgba(120, 160, 220, 1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+.item_body {
+  color: rgb(91, 123, 171);
+}
+
+.archive_head {
+  border-bottom: 1.8px solid rgba(180, 200, 150, 1);
+}
+
+.archive_head :hover {
+  color: rgba(180, 200, 150, 1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+.item_head {
+  color: rgb(124, 138, 103);
+}
+
+.archive_online {
+  border-bottom: 1.8px solid rgba(230, 190, 130, 1);
+}
+
+.archive_online :hover {
+  color: rgba(230, 190, 130, 1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+.item_online {
+  color: rgb(178, 147, 101);
+}
+
+.archive_bridal {
+  border-bottom: 1.8px solid rgba(200, 160, 170, 1);
+}
+
+.archive_bridal :hover {
+  color: rgba(200, 160, 170, 1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+.item_bridal {
+  color: rgb(160, 126, 135);
+}
+
+.archive_make {
+  border-bottom: 1.8px solid rgba(170, 150, 220, 1);
+}
+
+.archive_make :hover {
+  color: rgba(170, 150, 220, 1);
+  transition: color 0.3s ease; /* アニメーションの速度と効果 */
+}
+
+.item_make {
+  color: rgb(135, 119, 176);
+}
+
 ul {
   padding: 0;
   margin: 0;
 }
 
-li {
+.menu_archive li {
   border-bottom: 0.18rem dotted rgb(228, 205, 174);
 }
 
@@ -224,7 +305,7 @@ li {
   margin-bottom: 2%;
   font-weight: 500;
   font-size: 0.875rem;
-  color: #9a8172;
+  /* color: #9a8172; */
 }
 
 .item_price {
@@ -232,7 +313,7 @@ li {
   width: 50%;
   height: auto;
   margin-left: 8%;
-  color: #009ba0;
+  /* color: #009ba0; */
   font-size: 0.875rem;
 }
 
@@ -247,11 +328,13 @@ li {
 
 .menu_ttl_wrap,
 .menu_ttl_wrap_online {
-  margin: 0 auto 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  gap: 3rem;
   width: 60%;
   height: auto;
+  margin: 0 auto 0 auto;
 }
 
 .menu_ttl,
@@ -264,11 +347,11 @@ li {
 }
 
 .menu_ttl {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .menu_ttl_online {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .circle,
@@ -305,7 +388,7 @@ li {
 .treatment_name {
   width: 100%;
   height: auto;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-align: center;
   /* ------------フォントをADSそよ風に指定-------- */
   font-family: ads-soyokaze, sans-serif;
@@ -325,9 +408,9 @@ li {
 
 .point {
   color: #4bb7bb;
-  width: 100%;
+  width: 90%;
   height: auto;
-  text-align: left;
+  text-align: right;
   /* ------------フォントをADSそよ風に指定-------- */
   font-family: ads-soyokaze, sans-serif;
   font-style: normal;

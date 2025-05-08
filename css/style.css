@@ -37,7 +37,7 @@ header {
 
 /* ---------------------- PC用ナビゲーション --------------------*/
 #navPc {
-  width: 60%;
+  width: 70%;
   height: auto;
   margin-right: 5%;
   z-index: 1000;
@@ -823,7 +823,7 @@ main {
 }
 
 #footerNav {
-  width: 100%;
+  width: 70%;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-right: auto;

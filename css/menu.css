@@ -301,20 +301,21 @@ ul {
 
 .item_name {
   display: block;
-  margin-top: 4%;
-  margin-bottom: 2%;
+  width: 80%;
+  height: auto;
+  margin: 4% auto 2% auto;
   font-weight: 500;
   font-size: 0.875rem;
-  /* color: #9a8172; */
 }
 
 .item_price {
   display: block;
-  width: 50%;
+  width: 80%;
   height: auto;
-  margin-left: 8%;
-  /* color: #009ba0; */
+  margin-left: auto;
+  margin-right: auto;
   font-size: 0.875rem;
+  text-align: right;
 }
 
 /* -------------○○○ facial　○○○------------- */

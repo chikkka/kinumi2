@@ -125,10 +125,17 @@
     width: 2.4rem;
     height: auto;
   }
-  .footer_li img {
-    width: 80%;
+
+  #footerNav {
+    width: 100%;
     height: auto;
   }
+
+  .footer_sns_icon img {
+    width: 60%;
+    height: auto;
+  }
+
   #copy {
     width: 50%;
     height: auto;
@@ -222,16 +229,6 @@
   #footerSalonIcon {
     width: 7%;
     margin-bottom: -8%;
-  }
-
-  #footerNav {
-    width: 100%;
-    height: auto;
-  }
-
-  .footer_sns_icon img {
-    width: 60%;
-    height: auto;
   }
   /* ------------- contactページ ------------- */
   #contact {

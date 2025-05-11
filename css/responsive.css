@@ -223,8 +223,15 @@
     width: 7%;
     margin-bottom: -8%;
   }
-  #copy {
-    font-size: 0.875rem;
+
+  #footerNav {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer_sns_icon img {
+    width: 60%;
+    height: auto;
   }
   /* ------------- contactページ ------------- */
   #contact {

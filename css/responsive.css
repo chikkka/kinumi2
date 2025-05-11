@@ -7,20 +7,7 @@
   #conceptWrap,
   #therapistWrap {
     max-width: 1200px;
-    margin: 10% auto;
-    padding: 0 20px;
-  }
-
-  #subTitle {
-    position: absolute;
-    top: 4.4%;
-    right: 4%;
-    width: 24%;
-    height: auto;
-  }
-  #subTitle img {
-    width: 100%;
-    height: auto;
+    margin: 2% auto;
   }
 }
 /* -----タブレット向け---画面幅が1023pxを下回った時に適用される----- */
@@ -45,11 +32,25 @@
   #navArea {
     display: flex;
   }
-  /* ---------------------タイトル--------------------------------x */
-  #subTitle {
-    position: absolute;
-    top: 3.2%;
-    right: 4%;
+
+  /* -----------------------line------------------------------ */
+  #line {
+    position: fixed;
+    bottom: 2%;
+    right: 0%;
+    width: 60%;
+    height: auto;
+    z-index: 1000;
+  }
+
+  #line_icon {
+    width: 100%;
+    height: auto;
+  }
+
+  #line_icon img {
+    width: 100%;
+    height: auto;
   }
   /* -------------------------concept--------------------------- */
   #salonTxt {
@@ -161,13 +162,6 @@
     font-size: 1rem;
     letter-spacing: -3px;
   }
-  #subTitle {
-    position: absolute;
-    top: 3.2%;
-    right: 4%;
-    width: 24%;
-    height: auto;
-  }
   /* ------------- concept ---------- */
   .content_ttl {
     font-size: 1.2rem;
@@ -200,7 +194,7 @@
   }
 
   #therapistContent3 {
-    background-image: url('../assetts/img/bird-3.png');
+    background-image: url('../assets/img/bird-3.png');
     background-size: 35%;
     background-position: calc(32%) calc(97%);
   }

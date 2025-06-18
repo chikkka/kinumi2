@@ -513,6 +513,12 @@ ul {
   height: auto;
   margin-top: 10%;
 }
+/* ------------------------○○○ hair removal  only ○○○--------------------- */
+#hairRemoval {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 /* ------------------------○○○ online_facial  only ○○○--------------------- */
 .online_facial_menu {

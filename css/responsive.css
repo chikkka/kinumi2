@@ -1,6 +1,5 @@
 /* -----大きいPC幅向け---画面幅が1200pxを上回った時に適用される----- */
 @media screen and (min-width: 1200px) {
-  header,
   #navArea,
   main,
   footer,
@@ -9,12 +8,15 @@
     max-width: 1200px;
     margin: 2% auto;
   }
+  header {
+    max-width: 1200px;
+  }
 }
 /* -----タブレット向け---画面幅が1023pxを下回った時に適用される----- */
 @media screen and (max-width: 1023px) {
   /* ---------------------- PC用ナビゲーション --------------------*/
   #navPc {
-    width: 72%;
+    width: 90%;
   }
   /* -------------------------concept--------------------------- */
   #salonTxt2 {
@@ -30,7 +32,7 @@
   }
   /*---------------------- ハンバーガーナビゲーション ---------------*/
   #navArea {
-    display: flex;
+    display: block;
   }
 
   /* -----------------------line------------------------------ */
@@ -51,6 +53,10 @@
   #line_icon img {
     width: 100%;
     height: auto;
+  }
+  /* ------------------------- main ---------------------- */
+  #mainVisualPc {
+    margin-top: 12%;
   }
   /* -------------------------concept--------------------------- */
   #salonTxt {
@@ -100,7 +106,6 @@
   #map {
     width: 100%;
     margin: 10% auto 10% auto;
-    background-color: pink;
   }
 
   /* -------------------------banner-------------------------- */
@@ -164,11 +169,19 @@
   #navPc {
     display: none;
   }
-  /* ------タイトル------ */
-  .mainTitle {
-    font-size: 1rem;
-    letter-spacing: -3px;
+  /*---------------------- ハンバーガーナビゲーション ---------------*/
+  #navArea {
+    position: fixed;
+    top: 2%;
+    right: 0%;
   }
+
+  .toggle-btn {
+    position: fixed;
+    top: 1%;
+    right: 4%;
+  }
+
   /* ------------- concept ---------- */
   .content_ttl {
     font-size: 1.2rem;

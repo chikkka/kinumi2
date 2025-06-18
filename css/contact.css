@@ -10,6 +10,16 @@
   margin: 3rem auto 3rem auto;
 }
 
+/* ------------------------ header --------------------- */
+header {
+  margin-bottom: 10%;
+}
+
+/* ------------------------ main ----------------------- */
+main {
+  position: relative;
+}
+
 #contactWrap {
   width: 60%;
   margin-left: auto;

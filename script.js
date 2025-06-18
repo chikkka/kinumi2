@@ -1,38 +1,38 @@
 // ハンバーガーナビゲーション
-let nav = document.querySelector("#navArea")
-let btn = document.querySelector(".toggle-btn")
 
-btn.onclick = () => {
-  nav.classList.toggle("open");
-};
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('#navArea');
+  const btn = document.querySelector('.toggle-btn');
 
-// 下にスクロールするとtopに戻るボタンが出現する
-// const returnTopButton = document.getElementById("returnTop");
-// const title = document.getElementById("subTitle");
-// const setPoint = title.offsetTop;
-// window.addEventListener("scroll",()=>{
-//   if(window.scrollY >= setPoint){
-//     returnTopButton.classList.add("fixed");
-//   }else{
-//     returnTopButton.classList.remove("fixed");
-//   }
-// });
-
-// -------menuページ---------
-// メニューバーの固定
-const menuBar = document.getElementById("effectItem");
-const stickyPoint = menuBar.offsetTop;
-window.addEventListener("scroll",()=>{
-  if(window.scrollY >= stickyPoint){
-  menuBar.classList.add("fixed");
-  }else{
-  menuBar.classList.remove("fixed");
-  }
+  btn.onclick = () => {
+    nav.classList.toggle('open');
+  };
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('.menu_content section');
+  const navLinks = document.querySelectorAll('#effectItem p a');
 
-console.log(stickyPoint,stickyPoint);
+  const observer = new IntersectionObserver( //intersectionObsereverAPIで、ある要素が画面に入ってきたか出ていったかを監視するためのコード
+    (entries) => {
+      //(entries)=>{}は要素が見えた時または消えた時に呼ばれるコールバック関数
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log('見えたよ', entry.target);
+          let id = entry.target.getAttribute('id');
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    },
+    { rootMargin: '-50% 0px -50% 0px', threshold: 0 }
+  );
 
-
-
-
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});

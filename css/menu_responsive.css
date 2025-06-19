@@ -3,9 +3,12 @@
 }
 /* -----スマホ向け---画面幅が767pxを下回った時に適用される----- */
 @media screen and (max-width: 767px) {
-  #effectItem a {
-    font-size: 0.875rem;
+  #effectItem {
+    display: none;
   }
+  /* #effectItem a {
+    font-size: 0.875rem;
+  } */
 
   .menu_ttl_wrap,
   .menu_ttl_wrap_online {

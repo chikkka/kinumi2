@@ -152,11 +152,8 @@
   /* ------------contactページ-------------------- */
   #name,
   #phone,
-  #email,
-  #message {
+  #email {
     width: 64%;
-    background-color: #ece3d9;
-    border-radius: 10px;
   }
 }
 
@@ -258,10 +255,7 @@
 
   #name,
   #phone,
-  #email,
-  #message {
+  #email {
     width: 50%;
-    background-color: #ece3d9;
-    border-radius: 10px;
   }
 }

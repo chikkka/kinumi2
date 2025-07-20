@@ -26,6 +26,23 @@ main {
   margin-right: auto;
 }
 
+.contact_name,
+.contact_phone,
+.contact_email,
+.contact_date,
+.contact_time {
+  font-weight: 400;
+}
+
+.contact_name span,
+.contact_phone span,
+.contact_email span,
+.contact_date span,
+.contact_time span {
+  color: rgb(171, 78, 69);
+  font-size: 0.8rem;
+}
+
 label {
   margin-top: 5%;
 }
@@ -69,7 +86,8 @@ label {
 
 .select_menu {
   color: #d6bda5;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   margin-top: 1.2rem;
 }
 
@@ -83,6 +101,9 @@ label {
 }
 
 #otherContacts {
+  color: #d6bda5;
+  font-size: 1rem;
+  font-weight: 500;
   margin-top: 4rem;
 }
 

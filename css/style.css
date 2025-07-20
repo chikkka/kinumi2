@@ -5,10 +5,10 @@ body {
   padding: 0px;
   margin: 0;
   background-color: #fffcef;
-  /* フォントを追加（筑紫A丸ゴシック） */
-  font-family: fot-tsukuardgothic-std, sans-serif;
+  /* フォントを追加（Zen Maru Gothic） */
+  font-family: zen-maru-gothic, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   color: #6c6059;
 }
 
@@ -27,6 +27,10 @@ a {
   text-decoration: none; /*架線を消す*/
 }
 
+ul {
+  list-style: none;
+}
+
 #salonIcon {
   position: fixed;
   top: 0;
@@ -41,27 +45,25 @@ a {
   height: auto;
 }
 
-#salonIcon span {
-  position: absolute;
-  width: 1px;
-  height: auto;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+h1 {
+  position: relative;
+  top: 0%;
+  /* フォントを’ads-soyokaze’に指定する*/
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.6px; /*文字間隔*/
+  line-height: 2.4; /*行間*/
 }
-
 /* ---------------------- PC用ナビゲーション --------------------*/
-#navPc {
+#nav-pc {
   width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.nav_pc_ul {
+.nav-pc-ul {
   position: relative;
   /* pc用ナビの中身を横一列に配置 */
   display: flex;
@@ -71,12 +73,12 @@ a {
   padding-top: 5%;
 }
 
-.nav_pc_list img {
+.nav-pc__list img {
   width: 100%;
   height: auto;
 }
 
-#dropDown {
+#drop-down {
   position: absolute;
   top: 100%;
   left: 10%;
@@ -95,33 +97,33 @@ a {
   transition: opacity 0.6s ease;
 }
 
-#dropDown p {
+#drop-down p {
   width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-#dropDown a {
+#drop-down a {
   color: #6c6059;
   text-decoration: none;
 }
 
-#dropDown a:hover {
+#drop-down a:hover {
   color: hsl(29, 37%, 74%);
 }
 
-#menu:hover #dropDown {
+#menu:hover #drop-down {
   visibility: visible;
   opacity: 1;
 }
 
-.nav_sns_icon {
+.nav-sns__icon {
   margin-left: 4%;
 }
 
 /*---------------------- ハンバーガーナビゲーション ---------------*/
-#navArea {
+#nav-area {
   display: none;
   position: fixed;
   top: 4%;
@@ -131,7 +133,7 @@ a {
   pointer-events: none;
   z-index: 9999;
 }
-.open #navArea {
+.open #nav-area {
   pointer-events: auto;
 }
 
@@ -185,12 +187,12 @@ a {
   transition-duration: 1s;
 }
 
-.open #navHum {
+.open #nav-hum {
   right: -10px;
   opacity: 1;
 }
 
-#navHum {
+#nav-hum {
   display: block;
   position: relative;
   top: 2%;
@@ -204,7 +206,7 @@ a {
   z-index: 100000;
 }
 
-#navHum ul {
+#nav-hum ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,7 +218,7 @@ a {
   margin: 5% auto;
 }
 
-.hum_item_wrap {
+.hum-item__wrap {
   display: block;
   width: 100%;
   height: auto;
@@ -228,7 +230,7 @@ a {
   text-align: center;
 }
 
-#navHum a {
+#nav-hum a {
   display: block;
   width: 100%;
   padding: 4% 0 4% 0;
@@ -237,7 +239,7 @@ a {
   text-decoration: none;
 }
 
-#hum_icon_wrap {
+#hum-icon__wrap {
   display: flex;
   width: 100%;
   height: auto;
@@ -264,7 +266,7 @@ a {
   height: auto;
 }
 
-.hum_item_wrap :hover,
+.hum-item__wrap :hover,
 .hum_insta :hover,
 .hum_facebook :hover {
   background-color: #d6bda5;
@@ -281,12 +283,12 @@ a {
   z-index: 1000;
 }
 
-#line_icon {
+#line-icon {
   width: 100%;
   height: auto;
 }
 
-#line_icon img {
+#line-icon img {
   width: 100%;
   height: auto;
 }
@@ -298,17 +300,17 @@ main {
 }
 
 /* ---------------------パソコン用トップページ画像---------------------*/
-#mainVisualPc {
+#main-visua__Pc {
   width: 100%;
   height: auto;
   margin-top: 4%;
 }
 /* ---------------------スマホ用トップページ画像---------------------*/
-#mainVisualSp {
+#main-visual__sp {
   display: none;
 }
 /* ----------------------------concept-------------------------*/
-#conceptWrap {
+#concept-wrap {
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -320,120 +322,151 @@ main {
   background-position: calc(100%) calc(110%);
 }
 
-/* content_ttlは各タイトルを装飾するためのクラス名 */
-.content_ttl {
+/* content-ttlは各タイトルを装飾するためのクラス名 */
+.content-ttl {
   width: max-content;
-  margin: auto;
+  margin: 20% auto 0 auto;
   /* フォントを’ads-soyokaze’に指定する*/
-  font-family: ads-soyokaze, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
+  font-family: ab-kirigirisu, sans-serif;
   letter-spacing: 2px; /*文字間隔*/
   line-height: 1.8; /*行間*/
   color: #d6bda5;
 }
 
 /* --------サイトの横幅を統一させる----------- */
-#conceptContent1,
-#conceptContent2,
-#conceptContent3,
-#therapistContent2,
-#therapistContent3,
-#snsContent,
-#accessContent,
+#concept-intro,
+#concept-approach,
+#concept-message,
+#therapist-profile__wrap,
+#therapist-message__wrap,
+#sns-content,
+#access-content,
 #banner {
   width: 80%;
   height: auto;
 }
 
-#conceptContent1 {
+#concept-intro {
   margin-left: auto;
   margin-right: auto;
 }
 
-#conceptDescription {
+#concept-intro__description {
+  position: relative;
+  display: flex;
   width: 100%;
   height: auto;
-  display: flex;
-  position: relative;
   margin-top: 5%;
 }
 
-#salonTxtWrap {
+#salon-txt__wrap {
   width: 100%;
   height: auto;
   text-align: center;
 }
 
-#salonTxt {
+/* ------良い加減での美肌の近道を伝える子連れOKサロン-------- */
+#salon-txt {
   display: block;
-  margin-top: 20%;
+  margin-top: 5%;
   color: #9e7f63;
+  /* フォントを’ads-soyokaze’に指定する*/
+  font-family: ads-soyokaze, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 1.6px; /*文字間隔*/
   line-height: 2; /*行間*/
 }
 
-#conceptImg {
+#bird-orange {
+  width: 240px;
+  height: auto;
+  animation: sway 2s ease-in-out infinite; /* 2秒周期で無限ループ */
+}
+
+/* ----------鳥を横揺れさせる--------- */
+@keyframes sway {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  } /* 左にちょっと動く */
+  50% {
+    transform: translateX(5px);
+  } /* 右にちょっと動く */
+  75% {
+    transform: translateX(-5px);
+  } /* 左に戻る */
+  100% {
+    transform: translateX(0);
+  } /* 元の位置 */
+}
+
+#bird-orange img {
   width: 100%;
   height: auto;
 }
 
-#conceptImg img {
-  width: 100%;
-  /* マスクを設定*/
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0) 100%
-  );
-
-  /* マスクのその他の設定 */
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+#concept-img__main {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #d6bda5;
+  border-radius: 2em;
+  overflow: hidden;
+  box-shadow: 4px 6px 4px #e4ccb6;
 }
 
-.image_gallery {
+#concept-img__main img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+#concept-img__main img:hover {
+  transform: scale(1.2);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.image_slide_pc {
-  width: 33.33%;
-  height: auto;
+  border-radius: 2em;
   overflow: hidden;
 }
 
-.image_slide_pc img {
-  width: 100%;
+.iimage-slide {
+  width: 33.33%;
   height: auto;
-  object-fit: cover;
-  /* opacity: 0; */
-  animation: fadeIn 3.5s ease-out forwards;
 }
 
-#conceptContent2 {
+.iimage-slide img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.iimage-slide img:hover {
+  transform: scale(1.6);
+}
+
+#concept-approach {
   margin: 3rem auto 0 auto;
 }
 
-#conceptDescription2 {
+#concept-approach__description {
   width: 100%;
   height: auto;
 }
 
 /* ---身近なものでキレイにかわいくなれる方法を・・・-- */
-#salonTxt2 {
+#approach-txt {
   display: block;
   margin: 10% auto 10% auto;
   width: 100%;
@@ -449,24 +482,23 @@ main {
   line-height: 2.4; /*行間*/
 }
 
-#therapistImg1 {
-  display: grid;
-  place-items: center; /*縦横の中央揃え*/
-  width: 50%;
-  height: auto;
-  text-align: center;
-}
-
-#therapistImg1 img {
+#approach-img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  text-align: center;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+#approach-img img {
+  width: 100%;
+  height: auto;
 }
 
 /* ---セラピスト画像の縁をぼかす---- */
-#therapistImg1 img,
-#therapistImg2 img,
-#therapistImg3 img {
+#approach-img img,
+#therapist-profile__img img,
+#therapist-message__img img {
   /* マスクを設定 */
   -webkit-mask-image: radial-gradient(
     circle,
@@ -491,16 +523,16 @@ main {
   color: rgb(255, 181, 128);
 }
 
-#conceptContent3 {
+#concept-message {
   margin: 10% auto 0 auto;
 }
 
-#salonTxtWrap3 {
+#message-txt__wrap {
   width: 100%;
   height: auto;
 }
 
-.salonTxt3 {
+.message-txt {
   display: block;
   width: 80%;
   height: auto;
@@ -510,6 +542,7 @@ main {
   line-height: 2; /*行間*/
 }
 
+/* -----ママだから、美に時間をかけるのは難しい、、、 */
 #problem {
   display: block;
   width: 80%;
@@ -528,91 +561,182 @@ main {
 }
 
 /* ------------------------therapist-------------------------- */
-#therapistWrap {
+#therapist-wrap {
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  margin-top: 10%;
   margin-left: calc(-50vw + 50%);
 }
 
-#therapistContent2 {
+#therapist-profile__wrap {
   position: relative;
-  display: flex;
   justify-content: center;
-  margin: 10% auto 0 auto;
+  margin: 0 auto 0 auto;
   padding-bottom: 10%;
-  background-image: url('../assets/img/bird-2.png');
-  background-repeat: no-repeat;
-  background-size: 16%;
-  background-position: calc(14%) calc(90%);
 }
 
-#therapistTxt2 {
+#therapist-profile {
   width: 50%;
   height: auto;
+  margin: 0 auto 0 auto;
   text-align: center;
 }
 
-#therapistTxt2Name {
+#therapist-name {
   width: 100%;
   height: auto;
   font-size: 1.2rem;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
-#therapistTxt2From {
+#therapist-address {
   width: 100%;
   height: auto;
   font-size: 0.875rem;
-  margin-top: 10%;
+  margin-top: 2%;
+}
+
+#therapist-profile-txt {
+  display: flex;
 }
 
 .career {
-  display: block;
-  margin-top: 10%;
   margin-right: 8%;
   text-align: left;
+  border-left: 3.6px solid #96d4de;
+  padding-left: 10px;
 }
 
-#therapistImg2 {
+.career span {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #85b5bc;
+}
+
+#therapist-profile__img__wrap {
+  position: relative;
+  width: 80%;
+  height: auto;
+}
+
+#therapist-profile__img {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+#therapist-profile__img img {
+  width: 100%;
+  height: auto;
+}
+
+#bird-blue {
+  position: absolute;
+  left: -60%;
+  bottom: -32%;
   width: 50%;
-  height: auto;
-  margin-top: 10%;
 }
 
-#therapistImg2 img {
+#bird-blue img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  animation: runAcrossBounce 14s linear infinite;
 }
 
-#therapistContent3 {
+@keyframes runAcrossBounce {
+  0% {
+    transform: translateX(-5vw) translateY(0);
+  }
+  10% {
+    transform: translateX(0vw) translateY(-10px);
+  }
+  20% {
+    transform: translateX(10vw) translateY(0);
+  }
+  30% {
+    transform: translateX(20vw) translateY(-20px);
+  }
+  40% {
+    transform: translateX(30vw) translateY(0);
+  }
+  50% {
+    transform: translateX(40vw) translateY(-20px);
+  }
+  60% {
+    transform: translateX(50vw) translateY(0);
+  }
+  70% {
+    transform: translateX(60vw) translateY(-20px);
+  }
+  80% {
+    transform: translateX(70vw) translateY(0);
+  }
+  90% {
+    transform: translateX(80vw) translateY(-20px);
+  }
+  100% {
+    transform: translateX(100vw) translateY(0);
+  }
+}
+
+#therapist-message__wrap {
   display: flex;
-  padding-bottom: 10rem; /*小鳥の画像を下方に置くために*/
   margin: 5rem auto 0 auto;
-  background-image: url('../assets/img/bird-3.png');
-  background-repeat: no-repeat;
-  background-size: 24%;
-  background-position: calc(90%) calc(80%);
 }
 
-#therapistImg3 {
-  display: grid;
-  place-items: center; /*縦横の中央揃え*/
-  width: 30%;
+#therapist-message-img__wrap {
+  position: relative;
+  width: 40%;
   height: auto;
-  text-align: center;
 }
 
-#therapistImg3 img {
+#therapist-message__img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
 }
 
-#therapistTxt3 {
-  width: 90%;
+#therapist-message__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+}
+
+#bird-pink {
+  display: inline-block;
+  position: absolute;
+  right: -180%;
+  bottom: -10%;
+  width: 100%;
+  height: auto;
+  animation: wiggle 1s infinite ease-in-out;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-3px) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(3px) rotate(3deg);
+  }
+  75% {
+    transform: translateX(-3px) rotate(-3deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+#bird-pink img {
+  width: 100%;
+  height: auto;
+}
+
+#therapist-message {
+  width: 60%;
   height: auto;
   font-size: 0.875rem;
   margin-left: auto;
@@ -627,7 +751,7 @@ main {
 
 /* -----------------------sns--------------------------------- */
 
-#snsWrap {
+#sns-wrap {
   width: 100%;
   height: auto;
   margin-top: 10%;
@@ -635,7 +759,7 @@ main {
   text-align: center;
 }
 
-#snsWrap p {
+#sns-wrap p {
   width: 100%;
   height: auto;
   font-size: 0.9rem;
@@ -643,18 +767,18 @@ main {
   margin-top: 1rem;
 }
 
-#snsContent {
+#sns-content {
   margin: 10% auto 0 auto;
 }
 
-#snsContent ul {
+#sns-content ul {
   padding: 0%;
   margin: 0%;
   display: flex;
   justify-content: space-around;
 }
 
-#snsContent a {
+#sns-content a {
   color: #6c6059;
   text-decoration: none;
 }
@@ -665,9 +789,34 @@ main {
   margin: 0%;
   /* インスタの画像を中央に寄せる */
   text-align: center;
-  border: 2px solid rgba(130, 190, 200, 1);
+  border: 2px solid #e19a67;
   border-radius: 15px;
-  /* background-color: rgba(130, 190, 200, 1); */
+  background-color: #e7bda0;
+  box-shadow: 2px 4px 4px rgb(149, 123, 84);
+}
+
+#facebook {
+  width: 30%;
+  padding: 0%;
+  margin: 0%;
+  /* インスタの画像を中央に寄せる */
+  text-align: center;
+  border: 2px solid #66a1b8;
+  border-radius: 15px;
+  background-color: #b7d1db;
+  box-shadow: 2px 4px 4px rgb(84, 101, 104);
+}
+
+#ameblo {
+  width: 30%;
+  padding: 0%;
+  margin: 0%;
+  /* インスタの画像を中央に寄せる */
+  text-align: center;
+  border: 2px solid rgb(128, 149, 117);
+  border-radius: 15px;
+  background-color: #b6c8b8;
+  box-shadow: 2px 4px 4px rgb(88, 101, 82);
 }
 
 #instagram a,
@@ -677,77 +826,52 @@ main {
   margin: 0.1rem;
 }
 
-#instagram h3 {
-  font-size: 100%;
-}
-
-/* -----カーソルが乗った時にじんわりと色が変わる------ */
-#instagram :hover {
-  color: rgba(130, 190, 200, 1);
-  transition: color 0.3s ease; /* アニメーションの速度と効果 */
-}
-
-#instagram img {
-  width: 13%;
-  height: auto;
-}
-
-#facebook {
-  width: 30%;
-  /* facebookの画像を中央に寄せる */
-  text-align: center;
-  border: 2px solid rgba(230, 190, 130, 1);
-  border-radius: 15px;
-}
-
-#facebook h3 {
-  font-size: 100%;
-  /* background-color: whitesmoke; */
-}
-
-/* -----カーソルが乗った時にじんわりと色が変わる------ */
-#facebook :hover {
-  color: rgba(230, 190, 130, 1);
-  transition: color 0.3s ease; /* アニメーションの速度と効果 */
-}
-
-#facebook img {
-  width: 13%;
-  height: auto;
-}
-
-#ameblo {
-  width: 30%;
-  text-align: center;
-  border: 2px solid rgba(170, 150, 220, 1);
-  border-radius: 15px;
-}
-
+#instagram h3,
+#facebook h3,
 #ameblo h3 {
   font-size: 100%;
 }
 
-/* -----カーソルが乗った時にじんわりと色が変わる------ */
-#ameblo :hover {
-  color: rgba(170, 150, 220, 1);
-  transition: color 0.3s ease; /* アニメーションの速度と効果 */
-}
-
+#instagram img,
+#facebook img,
 #ameblo img {
   width: 13%;
   height: auto;
 }
 
+/* ------カーソルが乗った時にじんわりと半透明に変わる */
+#instagram:hover,
+#facebook:hover,
+#ameblo:hover {
+  opacity: 0.8;
+}
+
+/* -----カーソルが乗った時にじんわりと色が変わる------ */
+#instagram:hover h3,
+#facebook:hover h3,
+#ameblo:hover h3 {
+  color: rgb(244, 253, 255);
+  transition: color 0.4s ease; /* アニメーションの速度と効果 */
+}
+
+/* --------------クリック時にボタンが凹む--------- */
+#instagram:active,
+#facebook:active,
+#ameblo:active {
+  box-shadow: 0 1px #64677a;
+  transform: translateY(3px);
+}
+
 /*------------------------- access ----------------------------*/
 
-#accessWrap {
+#access-wrap {
   width: 100%;
   height: auto;
   margin-top: 10%;
   padding: 5rem 0 5rem 0;
 }
 
-#accessContent {
+#access-content {
   margin: 2rem auto 0 auto;
 }
 
@@ -761,19 +885,19 @@ main {
   width: 100%;
 }
 
-#accessContent section {
+#access-content section {
   width: 100%;
   height: auto;
   text-align: center;
 }
 
-.itemTtl {
+.item-ttl {
   font-size: 0.875rem;
   padding-top: 20px;
   color: #d6bda5;
 }
 
-.dot_line {
+.dot-line {
   border-bottom: 4px dotted #e3dad5;
   width: 100%;
   height: 0;
@@ -804,18 +928,18 @@ main {
 
 /* ----------------------------- footer ---------------------- */
 
-#footerSalonIcon {
+#footer-salonicon {
   width: 4rem;
   height: auto;
   margin: 16% auto 0 auto;
 }
 
-#footerSalonIcon img {
+#footer-salonicon img {
   width: 100%;
   height: auto;
 }
 
-#footerNav {
+#footer-nav {
   width: 80%;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -823,7 +947,7 @@ main {
   margin-left: auto;
 }
 
-.footer_ul {
+.footer-ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -832,16 +956,16 @@ main {
   margin: 50px auto 0 auto;
 }
 
-.footer_li {
+.footer-li {
   text-align: center;
 }
 
-.footer_li img {
+.footer-li img {
   width: 80%;
   height: auto;
 }
 
-.footer_sns_icon {
+.footer-sns__icon {
   width: 20%;
   height: auto;
   display: flex;
@@ -850,14 +974,14 @@ main {
   margin: 50px auto auto auto;
 }
 
-.footer_sns_icon li {
+.footer-sns__icon li {
   width: 2rem;
   height: auto;
   padding: 0%;
   margin: 0%;
 }
 
-.footer_sns_icon img {
+.footer-sns__icon img {
   width: 80%;
   height: auto;
 }
@@ -868,4 +992,18 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+/* ---------------------------フェードイン効果--------------- */
+/* 初期状態：下にズレて透明 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.4s ease-out;
+}
+
+/* 表示されたらふわっと戻る */
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }

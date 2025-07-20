@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="当サロンではヘッドスパ、フェイシャルトリートメント、ボディマッサージ、
-    ネイルケアなどの幅広いエステサービスを敵強しています。子連れでの来店も大歓迎で女性や主婦の方におすすめです。
-    お問い合わせやご予約はお電話またはお問い合わせフォームからお気軽にどうぞ。"
+    ネイルケアなどの幅広いエステサービスを提供しています。子連れでの来店も大歓迎で女性や主婦の方におすすめです。
+    お問い合わせやご予約はお電話またはお問い合わせフォーム、公式LINEからお気軽にどうぞ。"
     >
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+
+    <!-- Adobeフォント用　フォント読み込みスピード最適化 -->
+    <link rel="preconnect" href="https://use.typekit.net">
     <!-- cssリセットのコード -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
     <!-- CDNのコード -->
@@ -32,25 +35,27 @@
 <!-----------------------------body---------------------------->
   <body>
     <header>
-      <h1 id="salonIcon">
+      <p id="salonIcon">
         <a href="#">
           <img src="./assets/img/yamasulogo_480px.png">
         </a>
-          <span>ママのためのサロンやます</span>
+      <p>
+      <h1>
+          ママのためのサロンやます
       </h1>
 <!---------------------- PC用ナビゲーション ---------------------->
-      <nav id="navPc">
-        <ul class="nav_pc_ul">
-          <li class="nav_pc_list">
+      <nav id="nav-pc">
+        <ul class="nav-pc-ul">
+          <li class="nav-pc__list">
             <a href="index.html">
               <img src="./assets/img/home.png" alt="home">
             </a>
           </li>
-          <li class="nav_pc_list" id="menu">
+          <li class="nav-pc__list" id="menu">
             <a href="./menu.html">
               <img src="./assets/img/menu.png" alt="menu">
             </a>
-            <div id="dropDown"> 
+            <div id="drop-down"> 
               <p>
                 <a href="./menu.html#facial">facial -フェイシャル</a>    
               </p>
@@ -74,37 +79,37 @@
               </p>
             </div>
           </li>
-          <li class="nav_pc_list">
+          <li class="nav-pc__list">
             <a href="#sns">
               <img src="./assets/img/sns.png" alt="sns">
             </a>
           </li>
-          <li class="nav_pc_list">
+          <li class="nav-pc__list">
             <a href="./contact.html">
               <img src="./assets/img/contact.png" alt="contact" >
             </a>
           </li>
-          <li class="nav_pc_list">
+          <li class="nav-pc__list">
             <a href="#access">
               <img src="./assets/img/access.png" alt="access">
             </a>
           </li>
-          <li class="nav_pc_list">
+          <li class="nav-pc__list">
             <a href="https://www.naris-online.jp/shop/default.aspx" target="_blank" rel="noopener noreferrer">
               <img src="./assets/img/shop.png" alt="商品ページ">
             </a>
           </li>
-          <li class="nav_pc_list">
+          <li class="nav-pc__list">
             <a href="https://www.naris.co.jp/nbarecruit/closeup/training.html" target="_blank" rel="noopener noreferrer">
               <img src="./assets/img/school.png" alt="スクール">
             </a>
           </li>
-          <li class="nav_pc_list nav_sns_icon">
+          <li class="nav-pc__list nav-sns__icon">
             <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
               <img src="./assets/img/icon_facebook.png" alt="facebook">
             </a>
           </li>
-          <li class="nav_pc_list nav_sns_icon">
+          <li class="nav-pc__list nav-sns__icon">
             <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6" target="_blank" rel="noopener noreferrer">
               <img src="./assets/img/icon_insta.png" alt="intagram">
             </a>
@@ -113,41 +118,41 @@
       </nav>
       <!------------------------- line ------------------------------->
       <div id="line">
-        <p id="line_icon">
+        <p id="line-icon">
           <a href="https://lin.ee/D70HzGR" target="_blank" rel="noopener noreferrer">
             <img src="assets/img/line.png" alt="lineお友だち登録">
           </a>
         </p>
       </div>
   <!---------------------- ハンバーガーナビゲーション ---------------->
-      <div id="navArea">
-        <nav id="navHum">
+      <div id="nav-area">
+        <nav id="nav-hum">
           <ul>
-            <li class="hum_item_wrap">
+            <li class="hum-item__wrap">
               <a href="#">Home</a>
             </li>
-            <li class="hum_item_wrap">
+            <li class="hum-item__wrap">
               <a href="./menu.html">Menu</a>
             </li>
-            <li class="hum_item_wrap">
+            <li class="hum-item__wrap">
               <a href="./contact.html">Contact</a>
             </li>
-            <li class="hum_item_wrap">
+            <li class="hum-item__wrap">
               <a href="#access">Access</a>
             </li>
-            <li class="hum_item_wrap">
+            <li class="hum-item__wrap">
               <a href="https://www.naris-online.jp/shop/default.aspx" target="_blank" rel="noopener noreferrer">Shop</a>
             </li>
-            <li class="hum_item_wrap">
+            <li class="hum-item__wrap">
               <a href="https://www.naris.co.jp/nbarecruit/closeup/training.html" target="_blank" rel="noopener noreferrer">School</a>
             </li>
-            <li class="hum_item_wrap">
-              <div id="hum_icon_wrap">
+            <li class="hum-item__wrap">
+              <div id="hum-icon__wrap">
                 <div class="hum_insta">
                   <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6" target="_blank" rel="noopener noreferrer"><img src="./assets/img/icon_insta.png"></a>
                 </div>
               </div>
-              <div id="hum_icon_wrap">
+              <div id="hum-icon__wrap">
                 <div class="hum_facebook">
                   <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><img src="./assets/img/icon_facebook.png"></a>
                 </div>
@@ -166,121 +171,140 @@
     <main>
 <!------------------------ pc用トップページ画像 ------------------->
       <div>
-        <img id="mainVisualPc" src="./assets/img/top.webp" alt="PC用topページイメージ画像">
+        <img id="main-visua__Pc" src="./assets/img/top.webp" alt="PC用topページイメージ画像">
 <!----------------------- スマホ用トップページ画像 ----------------->
-        <img id="mainVisualSp" src="./assets/img/top.webp" style="width: 100%; height: auto;" alt="スマホ用topページイメージ画像">
+        <img id="main-visual__sp" src="./assets/img/top.webp" style="width: 100%; height: auto;" alt="スマホ用topページイメージ画像">
       </div>
 <!------------------------- concept ---------------------------->
-      <article id="conceptWrap">
-        <h2 class="content_ttl">concept</h2>
-        <section id="conceptContent1">
-          <div id="conceptDescription">
-            <div id="salonTxtWrap">
-              <p id="salonTxt">
+      <article id="concept-wrap">
+        <h2 class="content-ttl">concept</h2>
+        <section id="concept-intro">
+          <div id="concept-intro__description">
+            <div id="salon-txt__wrap">
+              <p id="salon-txt" class="fade-up">
                 「良い加減」での <br>
                 美肌の近道を伝える<br>
                 子連れOKサロン
               </p>
             </div>
-            <div id="conceptImg">
-              <img src="./assets/img/concept.png" alt="concept画像">
+            <div id="bird-orange">
+              <img src="./assets/img/bird.png">
+            </div>
+            <div id="concept-img__main">
+              <a href="#therapist">
+                <img src="./assets/img/concept2.jpg" alt="concept画像">
+              </a>
             </div>
           </div>
-          <div class="image_gallery">
-            <div class="image_slide_pc">
+          <div class="image-gallery">
+            <div class="iimage-slide">
               <img src="./assets/img/top_1.jpg" alt="イメージ１">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_2.jpg" alt="イメージ2">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_3.jpg" alt="イメージ3">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_4.jpg" alt="イメージ4">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_5.jpg" alt="イメージ5">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_6.jpg" alt="イメージ6">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_12.jpg" alt="イメージ12">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_13.jpg" alt="イメージ13">
             </div>
-            <div class="image_slide_pc">
+            <div class="iimage-slide">
               <img src="./assets/img/top_14.jpg" alt="イメージ14">
             </div>
           </div>
         </section>
-        <section id="conceptContent2">
-          <div id="conceptDescription2">
-            <p id="salonTxt2">
+        <section id="concept-approach">
+          <div id="concept-approach__description">
+            <p id="approach-txt" class="fade-up">
               身近なもので<br>
               <span id="beauty">キレイ</span>に<span id="cute">かわいく</span><br>
               なれる方法をお伝えしてます
             </p>
-            <div id="therapistImg1">
+            <div id="approach-img">
               <img src="./assets/img/therapist.jpg" alt="セラピストイメージ">
             </div>
           </div>
         </section>
-        <section id="conceptContent3">
-          <div id="salonTxtWrap3">
-            <p id="problem">ママだから、<br>美に時間をかけるのは難しい…</p>
-            <p class="salonTxt3">
+        <section id="concept-message">
+          <div id="message-txt__wrap">
+            <p id="problem" class="fade-up">ママだから、<br>美に時間をかけるのは<br>難しい…</p>
+            <p class="message-txt">
               そんな悩みを抱えていませんか？<br>
               当サロンでは、お子さんと一緒にご来店いただけます。
             </p>
-            <p class="salonTxt3">
-              専用スペースやお子様に配慮した環境を整えており、<br>ママも安心して施術を受けられます。
+            <p class="message-txt">
+              専用スペースやお子様に配慮した環境を整えており、ママも安心して施術を受けられます。
             </p>
-            <p class="salonTxt3">
-              忙しい毎日の中で、ほんのひとときでも<br>自分を大切にする時間を提供いたします🌼
+            <p class="message-txt">
+              忙しい毎日の中で、ほんのひとときでも自分を大切にする時間を提供いたします🌼
             </p>
           </div>
         </section>
       </article>
 
 <!-------------------------therapist---------------------------->
-      <article id="therapistWrap">
-        <h2 class="content_ttl" id="therapist">therapist</h2>
-        <section id="therapistContent2">
-          <div id="therapistTxt2">
-            <p id="therapistTxt2Name">
+      <article id="therapist-wrap">
+        <h2 class="content-ttl" id="therapist">therapist</h2>
+        <section id="therapist-profile__wrap">
+          <div id="therapist-profile">
+            <p id="therapist-name">
               荒川 絹美
             </p>
-            <p id="therapistTxt2From">
+            <p id="therapist-address">
               長崎県大村市出身<br>
               福岡市博多区在住<br>
-              <span class="career">
-                【20代】9年間老人福祉に携わり、ケアーマネージャーとして勤務。
-              </span>
-              <span class="career">
-                【34歳】大手化粧品メーカーのエステアカデミースクール卒業。
-              </span>
-              <span class="career">
-                【36歳】自宅サロン「ママのためのサロンやます」開業。
-              </span>
             </p>
           </div>
-          <div id="therapistImg2">
-            <img src="./assets/img/therapist_2.webp" alt="セラピストイメージ写真">
+          <div id="therapist-profile-txt">
+            <div>
+              <p class="career">
+                <span>20代</span><br>9年間老人福祉に携わり、ケアーマネージャーとして勤務。
+              </p>
+              <p class="career">
+                <span>34歳</span><br>大手化粧品メーカーのエステアカデミースクール卒業。
+              </p>
+              <p class="career">
+                <span>36歳</span><br>自宅サロン「ママのためのサロンやます」開業。
+              </p>
+            </div>
+            <div id="therapist-profile__img__wrap">
+              <p id="therapist-profile__img">
+                <img src="./assets/img/therapist_2.webp" alt="セラピストイメージ写真">
+              </p>
+              <p id="bird-blue">
+                <img src="./assets/img/bird-2.png" alt="">
+              </p>
+            </div>
           </div>
         </section>
-        <section id="therapistContent3">
-          <div id="therapistImg3">
-            <img src="./assets/img/therapist_3.webp"  alt="セラピストのイメージ写真">
+        <section id="therapist-message__wrap">
+          <div id="therapist-message-img__wrap">
+            <p id="therapist-message__img">
+              <img src="./assets/img/therapist_3.webp"  alt="セラピストのイメージ写真">
+            </p>
+            <p id="bird-pink">
+              <img src="./assets/img/bird-3.png" alt="">
+            </p>
           </div>
-          <div id="therapistTxt3">
+          <div id="therapist-message">
             <span class="about-me">
             博多区の自宅でエステサロンしてます、1981年生まれのトリ年です。
             </span>
             <span class="about-me">
-            独身時代は老人福祉に携わってましたが、結婚を機に退職。
+            独身時代は老人福祉に携わっていましたが、結婚を機に退職。
             </span>
             <span class="about-me">
             3人目を出産後に自宅で子育てできる仕事を選び、自宅サロンオーナーとなる。
@@ -292,10 +316,10 @@
         </section>
       </article>
 <!------------------------------- sns -------------------------->
-      <article id="snsWrap">
-        <h2 class="content_ttl" id="sns">sns</h2>
+      <article id="sns-wrap">
+        <h2 class="content-ttl" id="sns">sns</h2>
         <p>最新のお知らせやお店の情報を発信しています♪</p>
-        <section id="snsContent">
+        <section id="sns-content">
           <ul>
             <li id="instagram">
               <a href="https://www.instagram.com/yamasu2751?igsh=ZnBueXZkMHJmMWV6" target="_blank" rel="noopener noreferrer">
@@ -319,40 +343,40 @@
         </section>
       </article>
 <!---------------------------- access -------------------------->
-      <article id="accessWrap">
-        <h2 class="content_ttl" id="access">access</h2>
-        <div id="accessContent">
+      <article id="access-wrap">
+        <h2 class="content-ttl" id="access">access</h2>
+        <div id="access-content">
           <section>
-            <h3 class="itemTtl">店名</h3>
+            <h3 class="item-ttl">店名</h3>
             <p>ママのためのサロン やます</p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
 
-            <h3 class="itemTtl">所在地</h3>
+            <h3 class="item-ttl">所在地</h3>
             <p><a href="#map">福岡県 福岡市 博多区 吉塚7丁目 12-38</a></p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
             
-            <h3 class="itemTtl">営業時間</h3>
+            <h3 class="item-ttl">営業時間</h3>
             <p>10:30  ~  17:30 </p>
             <p>※ 受付 15:00まで</p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
 
-            <h3 class="itemTtl">店休日</h3>
+            <h3 class="item-ttl">店休日</h3>
             <p>祝日・日曜日・月曜日・水曜日</p>
             <p>※ 土曜日は13:00 open</p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
 
-            <h3 class="itemTtl">お支払い方法</h3>
+            <h3 class="item-ttl">お支払い方法</h3>
             <p>現金のみ</p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
 
-            <h3 class="itemTtl">駐車場</h3>
+            <h3 class="item-ttl">駐車場</h3>
             <p>1台</p>
             <p>※ご予約時にご確認ください</p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
 
-            <h3 class="itemTtl">電話番号</h3>
+            <h3 class="item-ttl">電話番号</h3>
             <p>090-5020-9214</p>
-            <p class="dot_line"></p>
+            <p class="dot-line"></p>
           </section>
           <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.8565805917565!2d130.4290886!3d33.6090255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35418e2b7c3af641%3A0x10ca802337b9a786!2z44CSODEyLTAwNDEg56aP5bKh55yM56aP5bKh5biC5Y2a5aSa5Yy65ZCJ5aGa77yX5LiB55uu77yR77yS4oiS77yT77yYIOODoeOCvuODs-ODu-ODieODu-ODrOOCueODneOCouODvOODqyBJSQ!5e0!3m2!1sja!2sjp!4v1736076828619!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -373,51 +397,51 @@
     </main>
 <!-------------------------- footer ---------------------------->
     <footer>
-      <div id="footerContent">
-        <div id="footerSalonIcon">
+      <div id="footer-content">
+        <div id="footer-salonicon">
           <a href="#">
             <img src="./assets/img/yamasulogo_480px.png"alt="Logo" >
           </a>
         </div>
-        <nav id="footerNav">
-          <ul class="footer_ul">
-            <li class="footer_li">
+        <nav id="footer-nav">
+          <ul class="footer-ul">
+            <li class="footer-li">
               <a href="#">
                 <img src="./assets/img/home.png" alt="home">
               </a>
             </li>
-            <li class="footer_li">
+            <li class="footer-li">
               <a href="./menu.html">
                 <img src="./assets/img/menu.png" alt="menu">
               </a>
             </li>
-            <li class="footer_li">
+            <li class="footer-li">
               <a href="#sns">
                 <img src="./assets/img/sns.png" alt="sns">
               </a>
             </li>
-            <li class="footer_li">
+            <li class="footer-li">
               <a href="./contact.html">
                 <img src="./assets/img/contact.png" alt="contact" >
               </a>
             </li>
-            <li class="footer_li">
+            <li class="footer-li">
               <a href="#access">
                 <img src="./assets/img/access.png" alt="access">
               </a>
             </li>
-            <li class="footer_li">
+            <li class="footer-li">
               <a href="https://www.naris-online.jp/shop/default.aspx" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/img/shop.png" alt="商品ページ">
               </a>
             </li>
-            <li class="footer_li">
+            <li class="footer-li">
               <a href="https://www.naris.co.jp/nbarecruit/closeup/training.html" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/img/school.png" alt="スクール">
               </a>
             </li>
           </ul>
-          <ul class="footer_sns_icon">
+          <ul class="footer-sns__icon">
             <li>
               <a href="https://www.facebook.com/share/16FM1mact7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/img/icon_facebook.png" alt="facebook">

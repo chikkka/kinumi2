@@ -1,7 +1,7 @@
 // ハンバーガーナビゲーション
 
 document.addEventListener('DOMContentLoaded', () => {
-  const nav = document.querySelector('#navArea');
+  const nav = document.querySelector('#nav-area');
   const btn = document.querySelector('.toggle-btn');
 
   btn.onclick = () => {
@@ -35,4 +35,25 @@ document.addEventListener('DOMContentLoaded', function () {
   sections.forEach((section) => {
     observer.observe(section);
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeUps = document.querySelectorAll('.fade-up');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // 画面に入ったらアニメ発火
+          entry.target.classList.add('show');
+        } else {
+          // 画面から外れたらリセット
+          entry.target.classList.remove('show');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  fadeUps.forEach((el) => observer.observe(el));
 });

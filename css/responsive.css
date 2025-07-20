@@ -301,6 +301,10 @@
     }
   }
 
+  .career {
+    margin-top: 8%;
+  }
+
   #therapist-message__wrap {
     margin: 0 auto 0 auto;
   }

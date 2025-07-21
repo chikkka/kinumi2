@@ -1,3 +1,12 @@
+// ページ読み込み完了したらローディング画面を消す
+window.addEventListener('load', () => {
+  const loading = document.getElementById('loading');
+  loading.classList.add('hide'); // CSSでふわっと消す
+  setTimeout(() => {
+    loading.style.display = 'none'; // 完全に消す
+  }, 500); // 0.5秒後に非表示
+});
+
 // ハンバーガーナビゲーション
 
 document.addEventListener('DOMContentLoaded', () => {

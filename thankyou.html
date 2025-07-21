@@ -2,10 +2,77 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="当サロンではヘッドスパ、フェイシャルトリートメント、ボディマッサージ、
+      ネイルケアなどの幅広いエステサービスを提供しています。子連れでの来店も大歓迎で女性や主婦の方におすすめです。
+      お問い合わせやご予約はお電話またはお問い合わせフォーム、公式LINEからお気軽にどうぞ。"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0"
+    />
+
+    <!-- Adobeフォント用　フォント読み込みスピード最適化 -->
+    <link rel="preconnect" href="https://use.typekit.net" />
+    <!-- cssリセットのコード -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css"
+    />
+    <!-- CDNのコード -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- カスタムcss -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/thankyou.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>送信完了</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="./assets/img/fabicon.ico" type="image/x-icon" />
+
+    <script>
+      // フォント追加
+      (function (d) {
+        var config = {
+            kitId: 'zoq3liv',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
   </head>
   <body>
-    <h1>ありがとうございました🌼👒</h1>
-    <p>お問い合わせ内容を受け付けました</p>
+    <h1 id="thankyou">ありがとうございました🌼👒</h1>
+    <p id="thankyou-message">お問い合わせ内容を受け付けました</p>
+    <div>
+      <img src="" alt="" />
+    </div>
   </body>
 </html>

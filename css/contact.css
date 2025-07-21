@@ -31,7 +31,10 @@ main {
 .contact_email,
 .contact_date,
 .contact_time {
-  font-weight: 400;
+  /* フォントを追加（Zen Maru Gothic） */
+  font-family: zen-maru-gothic, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .contact_name span,
@@ -53,8 +56,7 @@ label {
 .contact_date,
 .contact_time,
 .contact_menu,
-#requestMenu,
-#otherContacts {
+#requestMenu {
   font-size: 0.9rem;
 }
 
@@ -72,6 +74,10 @@ label {
 
 #message {
   width: 100%;
+  height: auto;
+  font-size: 0.8rem;
+  padding-top: 4%;
+  padding-left: 4%;
   background-color: #ece3d9;
   border-radius: 10px;
 }
@@ -100,10 +106,9 @@ label {
   margin-right: 3%;
 }
 
-#otherContacts {
+#other-contacts {
   color: #d6bda5;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
   margin-top: 4rem;
 }
 
@@ -113,5 +118,18 @@ label {
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 4rem auto 10rem auto;
+  font-size: 0.9rem;
   background-color: #d6bda5;
+  box-shadow: 2px 2px 2px #927b66;
+}
+
+/* ------カーソルが乗った時にじんわりと半透明に変わる */
+#button:hover {
+  opacity: 0.9;
+}
+
+/* --------------クリック時にボタンが凹む--------- */
+#button:active {
+  box-shadow: 0 1px #64677a;
+  transform: translateY(3px);
 }

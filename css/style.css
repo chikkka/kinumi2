@@ -12,6 +12,48 @@ body {
   color: #6c6059;
 }
 
+/* ---------------------------- loading ---------------------- */
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fffcef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease; /* 消える時のふわっと感 */
+}
+
+/* -ローディングアニメーション（ぐるぐる回るやつ）- */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top: 5px solid #d6bda5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* -読み完了後は非表示- */
+#loading.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ------------------- header ------------------------*/
 
 header {
